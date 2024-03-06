@@ -7669,3 +7669,573 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1709689040.2181
     'REQUEST_TIME' => 1709689040
 ]
+2024-03-06 09:38:34 [::1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'modules/user-management/front' does not exist: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi-VN/front.php Fallback file does not exist as well: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi/front.php
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\UserManagementModule.php:239
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\views\auth\login.php:18
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\components\BaseController.php:38
+2024-03-06 09:38:34 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'l297q9tn01rulsukk2n8pkjl9p'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49645'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/user-management/auth/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PATH_INFO' => '/user-management/auth/login'
+    'PHP_SELF' => '/index.php/user-management/auth/login'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=l297q9tn01rulsukk2n8pkjl9p'
+    'REQUEST_TIME_FLOAT' => 1709692714.1482
+    'REQUEST_TIME' => 1709692714
+]
+2024-03-06 09:38:36 [::1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'modules/user-management/front' does not exist: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi-VN/front.php Fallback file does not exist as well: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi/front.php
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\UserManagementModule.php:239
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\views\auth\login.php:18
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\components\BaseController.php:38
+2024-03-06 09:38:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'l297q9tn01rulsukk2n8pkjl9p'
+    '_csrf' => 'd503dd45c9b333888ee7b22c98bd7f371c21134a174176a5290d7df711d16edea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UNNHeNLhOUT2JioS9GWdxjIoOOgVJqGP\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49694'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/user-management/auth/login'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PATH_INFO' => '/user-management/auth/login'
+    'PHP_SELF' => '/index.php/user-management/auth/login'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=l297q9tn01rulsukk2n8pkjl9p; _csrf=d503dd45c9b333888ee7b22c98bd7f371c21134a174176a5290d7df711d16edea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UNNHeNLhOUT2JioS9GWdxjIoOOgVJqGP%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692716.9356
+    'REQUEST_TIME' => 1709692716
+]
+2024-03-06 09:38:48 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh/messages/vi-VN/app.php Fallback file does not exist as well: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh/messages/vi/app.php
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\themes\adminlte\layouts\admin\admin_left_menu.php:5
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\themes\adminlte\layouts\main.php:82
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\modules\dashboard\controllers\DefaultController.php:29
+2024-03-06 09:38:48 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'vrtpelahrbur1j8hc46r6jv5mg'
+    '_csrf' => '904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZznOwj96sq015ofT-mN5J4FhjtLsXgbo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709692728
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709691197
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e7d738c4386'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49737'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost:9999/user-management/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=vrtpelahrbur1j8hc46r6jv5mg; _csrf=904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZznOwj96sq015ofT-mN5J4FhjtLsXgbo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692728.8156
+    'REQUEST_TIME' => 1709692728
+]
+2024-03-06 09:41:51 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: vat_tu in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php:442
+Stack trace:
+#0 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php(463): yii\db\ActiveRecord::getTableSchema()
+#1 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\johnitvn\yii2-ajaxcrud\src\generators\Generator.php(132): yii\db\ActiveRecord::primaryKey()
+#2 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\InlineValidator.php(77): johnitvn\ajaxcrud\generators\Generator->validateModelClass('modelClass', NULL, Object(yii\validators\InlineValidator), 'app\\modules\\vat...')
+#3 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(johnitvn\ajaxcrud\generators\Generator), 'modelClass')
+#4 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(johnitvn\ajaxcrud\generators\Generator), Array)
+#5 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(59): yii\base\Model->validate()
+#6 [internal function]: yii\gii\controllers\DefaultController->actionView('ajaxcrud')
+#7 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#10 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#11 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-03-06 09:41:51 [::1][-][-][info][application] $_GET = [
+    'id' => 'ajaxcrud'
+]
+
+$_POST = [
+    '_csrf' => 'gcPXvcspRGfpG2cHGmlNwifVhOfZw-ObJlOp5OKv1x7bubnyvEN9UZpqVzYvBiuWCrjK0pP3pfNMJ-WXusi1cQ=='
+    'Generator' => [
+        'modelClass' => 'app\\modules\\vattu\\models\\VatTu'
+        'searchModelClass' => 'app\\modules\\vattu\\models\\VatTuSearch'
+        'controllerClass' => 'app\\modules\\vattu\\controllers\\VatTuController'
+        'viewPath' => '@app/modules/vattu/views/vat-tu'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'vrtpelahrbur1j8hc46r6jv5mg'
+    '_csrf' => '904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZznOwj96sq015ofT-mN5J4FhjtLsXgbo\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49838'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/gii/ajaxcrud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PATH_INFO' => '/gii/ajaxcrud'
+    'PHP_SELF' => '/index.php/gii/ajaxcrud'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '553'
+    'HTTP_CONTENT_LENGTH' => '553'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:9999'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/gii/ajaxcrud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=vrtpelahrbur1j8hc46r6jv5mg; _csrf=904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZznOwj96sq015ofT-mN5J4FhjtLsXgbo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692911.3732
+    'REQUEST_TIME' => 1709692911
+]
+2024-03-06 09:42:22 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: vat_tu in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php:442
+Stack trace:
+#0 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php(463): yii\db\ActiveRecord::getTableSchema()
+#1 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\johnitvn\yii2-ajaxcrud\src\generators\Generator.php(132): yii\db\ActiveRecord::primaryKey()
+#2 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\InlineValidator.php(77): johnitvn\ajaxcrud\generators\Generator->validateModelClass('modelClass', NULL, Object(yii\validators\InlineValidator), 'app\\modules\\vat...')
+#3 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(johnitvn\ajaxcrud\generators\Generator), 'modelClass')
+#4 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(johnitvn\ajaxcrud\generators\Generator), Array)
+#5 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(59): yii\base\Model->validate()
+#6 [internal function]: yii\gii\controllers\DefaultController->actionView('ajaxcrud')
+#7 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#10 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#11 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-03-06 09:42:22 [::1][-][-][info][application] $_GET = [
+    'id' => 'ajaxcrud'
+]
+
+$_POST = [
+    '_csrf' => 'gcPXvcspRGfpG2cHGmlNwifVhOfZw-ObJlOp5OKv1x7bubnyvEN9UZpqVzYvBiuWCrjK0pP3pfNMJ-WXusi1cQ=='
+    'Generator' => [
+        'modelClass' => 'app\\modules\\vattu\\models\\VatTu'
+        'searchModelClass' => 'app\\modules\\vattu\\models\\VatTuSearch'
+        'controllerClass' => 'app\\modules\\vattu\\controllers\\VatTuController'
+        'viewPath' => '@app/modules/vattu/views/vat-tu'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'vrtpelahrbur1j8hc46r6jv5mg'
+    '_csrf' => '904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZznOwj96sq015ofT-mN5J4FhjtLsXgbo\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49854'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/gii/ajaxcrud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PATH_INFO' => '/gii/ajaxcrud'
+    'PHP_SELF' => '/index.php/gii/ajaxcrud'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '553'
+    'HTTP_CONTENT_LENGTH' => '553'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:9999'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/gii/ajaxcrud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=vrtpelahrbur1j8hc46r6jv5mg; _csrf=904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZznOwj96sq015ofT-mN5J4FhjtLsXgbo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692942.9218
+    'REQUEST_TIME' => 1709692942
+]
