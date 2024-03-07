@@ -87,7 +87,7 @@ class XeController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {git
+    {
         $request = Yii::$app->request;
         $model = new Xe();  
 
