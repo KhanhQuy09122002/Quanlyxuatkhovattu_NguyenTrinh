@@ -1,7 +1,11 @@
 <?php
 
 namespace app\modules\vattu\models\base;
+<<<<<<< HEAD
 use app\modules\vattu\models\LoaiVatTu;
+=======
+
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 use Yii;
 
 /**
@@ -43,12 +47,21 @@ class VatTuBase extends \app\models\Vattu
     {
         return [
             'id' => 'ID',
+<<<<<<< HEAD
             'ten_vat_tu' => 'Tên Vật Tư',
             'so_luong' => 'Số Lượng',
             'don_gia' => 'Đơn Giá',
             'id_loai_vat_tu' => 'Id Loại Vật Tư',
             'create_date' => 'Ngày Tạo',
             'create_user' => 'Người Tạo',
+=======
+            'ten_vat_tu' => 'Ten Vat Tu',
+            'so_luong' => 'So Luong',
+            'don_gia' => 'Don Gia',
+            'id_loai_vat_tu' => 'Id Loai Vat Tu',
+            'create_date' => 'Create Date',
+            'create_user' => 'Create User',
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
         ];
     }
     
@@ -62,8 +75,12 @@ class VatTuBase extends \app\models\Vattu
         }
         return parent::beforeSave($insert);
     }
+<<<<<<< HEAD
     public function getLoaiVatTu()
     {
         return $this->hasOne(LoaiVatTu::class, ['id' => 'id_loai_vat_tu']);
     }
+=======
+   
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 }

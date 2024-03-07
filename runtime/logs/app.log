@@ -7669,6 +7669,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1709689040.2181
     'REQUEST_TIME' => 1709689040
 ]
+<<<<<<< HEAD
 2024-03-06 10:36:08 [::1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
     in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\views\auth\login_view.php:34
     in C:\xampp\htdocs\QLVT\vendor\webvimark\components\BaseController.php:38
@@ -7678,15 +7679,29 @@ $_SERVER = [
     in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\forms\LoginForm.php:35
     in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\views\auth\login_view.php:48
 2024-03-06 10:36:08 [::1][-][-][info][application] $_GET = []
+=======
+2024-03-06 09:38:34 [::1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'modules/user-management/front' does not exist: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi-VN/front.php Fallback file does not exist as well: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi/front.php
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\UserManagementModule.php:239
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\views\auth\login.php:18
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\components\BaseController.php:38
+2024-03-06 09:38:34 [::1][-][-][info][application] $_GET = []
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_clck' => '6ssybb|2|fff|0|1367'
     '_csrf' => '75d5762bed0c0e0e3f93930ba3f8cfda9306caf341ad580a0a092a2a690d759ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5-CxL1QGMBGoWvQmuWGY2aoxqEu3wJ2l\";}'
     'PHPSESSID' => '2b7knakp8rmf5mr7segmvsdj35'
+=======
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'l297q9tn01rulsukk2n8pkjl9p'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]
 
 $_SESSION = [
@@ -7695,6 +7710,7 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
     'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
@@ -7785,13 +7801,23 @@ $_SERVER = [
     'REMOTE_ADDR' => '::1'
     'REMOTE_PORT' => '52189'
     'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+=======
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49645'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'SERVER_NAME' => 'localhost'
     'SERVER_PORT' => '9999'
     'REQUEST_URI' => '/user-management/auth/login'
     'REQUEST_METHOD' => 'GET'
     'SCRIPT_NAME' => '/index.php'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+=======
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'PATH_INFO' => '/user-management/auth/login'
     'PHP_SELF' => '/index.php/user-management/auth/login'
     'HTTP_HOST' => 'localhost:9999'
@@ -7807,6 +7833,7 @@ $_SERVER = [
     'HTTP_SEC_CH_UA_MOBILE' => '?0'
     'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+<<<<<<< HEAD
     'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
     'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; _csrf=75d5762bed0c0e0e3f93930ba3f8cfda9306caf341ad580a0a092a2a690d759ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225-CxL1QGMBGoWvQmuWGY2aoxqEu3wJ2l%22%3B%7D; PHPSESSID=2b7knakp8rmf5mr7segmvsdj35'
     'REQUEST_TIME_FLOAT' => 1709696324.937
@@ -7821,15 +7848,35 @@ $_SERVER = [
     in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\forms\LoginForm.php:35
     in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\views\auth\login_view.php:48
 2024-03-06 10:55:21 [::1][-][-][info][application] $_GET = []
+=======
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=l297q9tn01rulsukk2n8pkjl9p'
+    'REQUEST_TIME_FLOAT' => 1709692714.1482
+    'REQUEST_TIME' => 1709692714
+]
+2024-03-06 09:38:36 [::1][-][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'modules/user-management/front' does not exist: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi-VN/front.php Fallback file does not exist as well: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor/webvimark/module-user-management/messages/vi/front.php
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\UserManagementModule.php:239
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\module-user-management\views\auth\login.php:18
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\webvimark\components\BaseController.php:38
+2024-03-06 09:38:36 [::1][-][-][info][application] $_GET = []
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_clck' => '6ssybb|2|fff|0|1367'
     '_csrf' => '75d5762bed0c0e0e3f93930ba3f8cfda9306caf341ad580a0a092a2a690d759ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5-CxL1QGMBGoWvQmuWGY2aoxqEu3wJ2l\";}'
     'PHPSESSID' => '2b7knakp8rmf5mr7segmvsdj35'
+=======
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'l297q9tn01rulsukk2n8pkjl9p'
+    '_csrf' => 'd503dd45c9b333888ee7b22c98bd7f371c21134a174176a5290d7df711d16edea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UNNHeNLhOUT2JioS9GWdxjIoOOgVJqGP\";}'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]
 
 $_SESSION = [
@@ -7838,21 +7885,40 @@ $_SESSION = [
 ]
 
 $_SERVER = [
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
     'REMOTE_ADDR' => '::1'
     'REMOTE_PORT' => '50706'
     'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+=======
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49694'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'SERVER_NAME' => 'localhost'
     'SERVER_PORT' => '9999'
     'REQUEST_URI' => '/user-management/auth/login'
     'REQUEST_METHOD' => 'GET'
     'SCRIPT_NAME' => '/index.php'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+=======
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'PATH_INFO' => '/user-management/auth/login'
     'PHP_SELF' => '/index.php/user-management/auth/login'
     'HTTP_HOST' => 'localhost:9999'
     'HTTP_CONNECTION' => 'keep-alive'
+<<<<<<< HEAD
+=======
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
@@ -7860,6 +7926,7 @@ $_SERVER = [
     'HTTP_SEC_FETCH_MODE' => 'navigate'
     'HTTP_SEC_FETCH_USER' => '?1'
     'HTTP_SEC_FETCH_DEST' => 'document'
+<<<<<<< HEAD
     'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
     'HTTP_SEC_CH_UA_MOBILE' => '?0'
     'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
@@ -7874,20 +7941,42 @@ $_SERVER = [
     in C:\xampp\htdocs\QLVT\themes\adminlte\layouts\main.php:82
     in C:\xampp\htdocs\QLVT\modules\congtrinh\controllers\DefaultController.php:18
 2024-03-06 10:55:29 [::1][-][-][info][application] $_GET = []
+=======
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=l297q9tn01rulsukk2n8pkjl9p; _csrf=d503dd45c9b333888ee7b22c98bd7f371c21134a174176a5290d7df711d16edea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UNNHeNLhOUT2JioS9GWdxjIoOOgVJqGP%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692716.9356
+    'REQUEST_TIME' => 1709692716
+]
+2024-03-06 09:38:48 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh/messages/vi-VN/app.php Fallback file does not exist as well: D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh/messages/vi/app.php
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\themes\adminlte\layouts\admin\admin_left_menu.php:5
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\themes\adminlte\layouts\main.php:82
+    in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\modules\dashboard\controllers\DefaultController.php:29
+2024-03-06 09:38:48 [::1][1][-][info][application] $_GET = []
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_clck' => '6ssybb|2|fff|0|1367'
     '_csrf' => '75d5762bed0c0e0e3f93930ba3f8cfda9306caf341ad580a0a092a2a690d759ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5-CxL1QGMBGoWvQmuWGY2aoxqEu3wJ2l\";}'
     'PHPSESSID' => '2b7knakp8rmf5mr7segmvsdj35'
+=======
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'vrtpelahrbur1j8hc46r6jv5mg'
+    '_csrf' => '904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZznOwj96sq015ofT-mN5J4FhjtLsXgbo\";}'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]
 
 $_SESSION = [
     '__flash' => []
     '__returnUrl' => 'http://localhost:9999/'
+<<<<<<< HEAD
 ]
 
 $_SERVER = [
@@ -10078,6 +10167,13 @@ $_SESSION = [
     '__id' => 1
     '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
     '__auth_last_update' => 1709631298
+=======
+    '_um_last_attempt' => 1709692728
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709691197
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     '__userRoles' => [
         0 => 'Admin'
         1 => 'bientapvien'
@@ -10307,6 +10403,7 @@ $_SESSION = [
         202 => '/user-management/user/view'
         203 => '/user-management/user/view'
     ]
+<<<<<<< HEAD
     '__visitorToken' => '65e819dce6961'
 ]
 
@@ -10315,13 +10412,27 @@ $_SERVER = [
     'REMOTE_ADDR' => '::1'
     'REMOTE_PORT' => '52911'
     'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+=======
+    '__visitorToken' => '65e7d738c4386'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49737'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'SERVER_NAME' => 'localhost'
     'SERVER_PORT' => '9999'
     'REQUEST_URI' => '/'
     'REQUEST_METHOD' => 'GET'
     'SCRIPT_NAME' => '/index.php'
+<<<<<<< HEAD
     'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+=======
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'PHP_SELF' => '/index.php'
     'HTTP_HOST' => 'localhost:9999'
     'HTTP_CONNECTION' => 'keep-alive'
@@ -10338,6 +10449,7 @@ $_SERVER = [
     'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
     'HTTP_REFERER' => 'http://localhost:9999/user-management/auth/login'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+<<<<<<< HEAD
     'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
     'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=0ap18un2828ugvi2lq973r4b9l; _csrf=ee5c5c7ee77af7c4b20d8f82083a08d2eb292b2d4ae2dabed789acca7d3eb531a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u1-LfJPSi2M1895STJg55jMxAae12JyL%22%3B%7D'
     'REQUEST_TIME_FLOAT' => 1709709789.0539
@@ -35247,11 +35359,52 @@ $_POST = [
         'p_id' => '1'
         'trang_thai' => 'Hoàn thành'
     ]
+=======
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=vrtpelahrbur1j8hc46r6jv5mg; _csrf=904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZznOwj96sq015ofT-mN5J4FhjtLsXgbo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692728.8156
+    'REQUEST_TIME' => 1709692728
+]
+2024-03-06 09:41:51 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: vat_tu in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php:442
+Stack trace:
+#0 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php(463): yii\db\ActiveRecord::getTableSchema()
+#1 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\johnitvn\yii2-ajaxcrud\src\generators\Generator.php(132): yii\db\ActiveRecord::primaryKey()
+#2 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\InlineValidator.php(77): johnitvn\ajaxcrud\generators\Generator->validateModelClass('modelClass', NULL, Object(yii\validators\InlineValidator), 'app\\modules\\vat...')
+#3 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(johnitvn\ajaxcrud\generators\Generator), 'modelClass')
+#4 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(johnitvn\ajaxcrud\generators\Generator), Array)
+#5 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(59): yii\base\Model->validate()
+#6 [internal function]: yii\gii\controllers\DefaultController->actionView('ajaxcrud')
+#7 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#10 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#11 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-03-06 09:41:51 [::1][-][-][info][application] $_GET = [
+    'id' => 'ajaxcrud'
+]
+
+$_POST = [
+    '_csrf' => 'gcPXvcspRGfpG2cHGmlNwifVhOfZw-ObJlOp5OKv1x7bubnyvEN9UZpqVzYvBiuWCrjK0pP3pfNMJ-WXusi1cQ=='
+    'Generator' => [
+        'modelClass' => 'app\\modules\\vattu\\models\\VatTu'
+        'searchModelClass' => 'app\\modules\\vattu\\models\\VatTuSearch'
+        'controllerClass' => 'app\\modules\\vattu\\controllers\\VatTuController'
+        'viewPath' => '@app/modules/vattu/views/vat-tu'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_clck' => '6ssybb|2|fff|0|1367'
     'PHPSESSID' => 'bs54de1aqitfgqe7tb1n72pmpq'
     '_csrf' => '50706a1e171d71255cf17536187b338332e3f0bbafc29cb3f6d8cf95a51216d3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VFCQXsMO5-2i3OmbHRhvEpIb2aY5MVN5\";}'
@@ -35970,12 +36123,48 @@ $_SERVER = [
     'HTTP_SEC_CH_UA_MOBILE' => '?0'
     'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+=======
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'vrtpelahrbur1j8hc46r6jv5mg'
+    '_csrf' => '904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZznOwj96sq015ofT-mN5J4FhjtLsXgbo\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49838'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/gii/ajaxcrud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PATH_INFO' => '/gii/ajaxcrud'
+    'PHP_SELF' => '/index.php/gii/ajaxcrud'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '553'
+    'HTTP_CONTENT_LENGTH' => '553'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:9999'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
     'HTTP_SEC_FETCH_SITE' => 'same-origin'
     'HTTP_SEC_FETCH_MODE' => 'navigate'
     'HTTP_SEC_FETCH_USER' => '?1'
     'HTTP_SEC_FETCH_DEST' => 'document'
+<<<<<<< HEAD
     'HTTP_REFERER' => 'http://localhost:9999/congtrinh/cong-trinh'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
     'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
@@ -37067,11 +37256,54 @@ $_POST = [
         'bien_so_xe' => '84AE-00752'
         'hinh_xe' => 'images/xe.jpg'
     ]
+=======
+    'HTTP_REFERER' => 'http://localhost:9999/gii/ajaxcrud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=vrtpelahrbur1j8hc46r6jv5mg; _csrf=904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZznOwj96sq015ofT-mN5J4FhjtLsXgbo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692911.3732
+    'REQUEST_TIME' => 1709692911
+]
+2024-03-06 09:42:22 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: vat_tu in D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php:442
+Stack trace:
+#0 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\db\ActiveRecord.php(463): yii\db\ActiveRecord::getTableSchema()
+#1 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\johnitvn\yii2-ajaxcrud\src\generators\Generator.php(132): yii\db\ActiveRecord::primaryKey()
+#2 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\InlineValidator.php(77): johnitvn\ajaxcrud\generators\Generator->validateModelClass('modelClass', NULL, Object(yii\validators\InlineValidator), 'app\\modules\\vat...')
+#3 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(johnitvn\ajaxcrud\generators\Generator), 'modelClass')
+#4 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(johnitvn\ajaxcrud\generators\Generator), Array)
+#5 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(59): yii\base\Model->validate()
+#6 [internal function]: yii\gii\controllers\DefaultController->actionView('ajaxcrud')
+#7 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#9 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('view', Array)
+#10 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#11 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\CV\2024\ThucTap\Quy\Quanlyxuatkhovattu_NguyenTrinh\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2024-03-06 09:42:22 [::1][-][-][info][application] $_GET = [
+    'id' => 'ajaxcrud'
+]
+
+$_POST = [
+    '_csrf' => 'gcPXvcspRGfpG2cHGmlNwifVhOfZw-ObJlOp5OKv1x7bubnyvEN9UZpqVzYvBiuWCrjK0pP3pfNMJ-WXusi1cQ=='
+    'Generator' => [
+        'modelClass' => 'app\\modules\\vattu\\models\\VatTu'
+        'searchModelClass' => 'app\\modules\\vattu\\models\\VatTuSearch'
+        'controllerClass' => 'app\\modules\\vattu\\controllers\\VatTuController'
+        'viewPath' => '@app/modules/vattu/views/vat-tu'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]
 
 $_FILES = []
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_clck' => '6ssybb|2|fff|0|1367'
     'PHPSESSID' => 'bs54de1aqitfgqe7tb1n72pmpq'
     '_csrf' => '50706a1e171d71255cf17536187b338332e3f0bbafc29cb3f6d8cf95a51216d3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VFCQXsMO5-2i3OmbHRhvEpIb2aY5MVN5\";}'
@@ -83559,12 +83791,48 @@ $_SERVER = [
     'HTTP_SEC_CH_UA_MOBILE' => '?0'
     'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+=======
+    '_ga' => 'GA1.1.786620757.1696563058'
+    '_ga_BRD5LNT54B' => 'GS1.1.1696597684.4.1.1696597725.0.0.0'
+    'site_lang' => '05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba:2:{i:0;s:9:\"site_lang\";i:1;s:2:\"vi\";}'
+    'PHPSESSID' => 'vrtpelahrbur1j8hc46r6jv5mg'
+    '_csrf' => '904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZznOwj96sq015ofT-mN5J4FhjtLsXgbo\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49854'
+    'SERVER_SOFTWARE' => 'PHP 8.0.26 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/gii/ajaxcrud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\CV\\2024\\ThucTap\\Quy\\Quanlyxuatkhovattu_NguyenTrinh\\web\\index.php'
+    'PATH_INFO' => '/gii/ajaxcrud'
+    'PHP_SELF' => '/index.php/gii/ajaxcrud'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '553'
+    'HTTP_CONTENT_LENGTH' => '553'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:9999'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
     'HTTP_SEC_FETCH_SITE' => 'same-origin'
     'HTTP_SEC_FETCH_MODE' => 'navigate'
     'HTTP_SEC_FETCH_USER' => '?1'
     'HTTP_SEC_FETCH_DEST' => 'document'
+<<<<<<< HEAD
     'HTTP_REFERER' => 'http://localhost:9999/congtrinh/cong-trinh'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
     'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
@@ -84049,4 +84317,12 @@ $_SERVER = [
     'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
     'REQUEST_TIME_FLOAT' => 1709797644.9513
     'REQUEST_TIME' => 1709797644
+=======
+    'HTTP_REFERER' => 'http://localhost:9999/gii/ajaxcrud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,vi;q=0.8'
+    'HTTP_COOKIE' => '_ga=GA1.1.786620757.1696563058; _ga_BRD5LNT54B=GS1.1.1696597684.4.1.1696597725.0.0.0; site_lang=05eaa52793e9dc2da14426ba18373a5ccbe12c13d165881ef72fbbf81d3f2f1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22site_lang%22%3Bi%3A1%3Bs%3A2%3A%22vi%22%3B%7D; PHPSESSID=vrtpelahrbur1j8hc46r6jv5mg; _csrf=904da386decd4aa480f84f5d0c27d3acaf38d3ae60e4a78f9e372c5af9c59c1da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZznOwj96sq015ofT-mN5J4FhjtLsXgbo%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709692942.9218
+    'REQUEST_TIME' => 1709692942
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]

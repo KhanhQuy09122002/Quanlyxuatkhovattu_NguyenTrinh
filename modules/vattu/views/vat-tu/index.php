@@ -10,7 +10,11 @@ use johnitvn\ajaxcrud\BulkButtonWidget;
 /* @var $searchModel app\modules\vattu\models\search\VatTuSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+<<<<<<< HEAD
 $this->title = 'Vật tư';
+=======
+$this->title = 'Vat Tus';
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 $this->params['breadcrumbs'][] = $this->title;
 
 CrudAsset::register($this);
@@ -29,7 +33,11 @@ CrudAsset::register($this);
                     Html::a('<i class="glyphicon glyphicon-plus"></i>', ['create'],
                     ['role'=>'modal-remote','title'=> 'Create new Vat Tus','class'=>'btn btn-default']).
                     Html::a('<i class="glyphicon glyphicon-repeat"></i>', [''],
+<<<<<<< HEAD
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Cập nhật']).
+=======
+                    ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid']).
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
                     '{toggleData}'.
                     '{export}'
                 ],
@@ -39,10 +47,17 @@ CrudAsset::register($this);
             'responsive' => true,          
             'panel' => [
                 'type' => 'primary', 
+<<<<<<< HEAD
                 'heading' => '<i class="glyphicon glyphicon-list"></i> Danh sách vật tư',
                 'before'=>'<em>* Resize table columns just like a spreadsheet by dragging the column edges.</em>',
                 'after'=>BulkButtonWidget::widget([
                             'buttons'=>Html::a('<i class="glyphicon glyphicon-trash"></i>&nbsp; Xóa tất cả',
+=======
+                'heading' => '<i class="glyphicon glyphicon-list"></i> Vat Tus listing',
+                'before'=>'<em>* Resize table columns just like a spreadsheet by dragging the column edges.</em>',
+                'after'=>BulkButtonWidget::widget([
+                            'buttons'=>Html::a('<i class="glyphicon glyphicon-trash"></i>&nbsp; Delete All',
+>>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
                                 ["bulk-delete"] ,
                                 [
                                     "class"=>"btn btn-danger btn-xs",
