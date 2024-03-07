@@ -23,6 +23,29 @@ $config = [
         'vattu' => [
             'class' => 'app\modules\vattu\Module',
         ],
+        'congtrinh' => [
+            'class' => 'app\modules\congtrinh\Modules',
+        ],
+        'xuatkho' => [
+            'class' => 'app\modules\xuatkho\Module',
+        ],
+       
+        'xe' => [
+            'class' => 'app\modules\vanchuyen\xe\Module',
+        ],
+        'taixe' => [
+            'class' => 'app\modules\vanchuyen\taixe\Module',
+        ],
+       
+        'vattuxuat' => [
+            'class' => 'app\modules\xuatkho\vattuxuat\Module',
+        ],
+        'vattuboctach' => [
+            'class' => 'app\modules\xuatkho\vattuboctach\Module',
+        ],
+        'nguoidung' => [
+            'class' => 'app\modules\nguoidung\Module',
+        ],
         'gridview' => [ 'class' => '\kartik\grid\Module' ],
     	'user-management' => [
     				'class' => 'webvimark\modules\UserManagement\UserManagementModule',

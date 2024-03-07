@@ -59,5 +59,7 @@ class PcounterByDay extends \yii\db\ActiveRecord
     		$arr[$i] = 'Tháng '.$i;
     	}
     	return $arr;
+        
     }
+    
 }

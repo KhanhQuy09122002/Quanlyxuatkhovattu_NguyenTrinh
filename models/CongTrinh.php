@@ -14,8 +14,8 @@ use Yii;
  * @property string|null $tg_ket_thuc
  * @property int|null $p_id
  * @property string|null $trang_thai
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
  * @property PhieuXuatKho[] $phieuXuatKhos
  * @property VatTuBocTach[] $vatTuBocTaches
@@ -36,7 +36,7 @@ class CongTrinh extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ten_cong_trinh', 'create_date', 'create_user'], 'required'],
+            [['ten_cong_trinh'], 'required'],
             [['tg_bat_dau', 'tg_ket_thuc', 'create_date'], 'safe'],
             [['p_id', 'create_user'], 'integer'],
             [['ten_cong_trinh', 'dia_diem'], 'string', 'max' => 255],

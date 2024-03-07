@@ -11,8 +11,9 @@ use Yii;
  * @property string $ho_ten
  * @property string|null $dia_chi
  * @property string|null $so_dien_thoai
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $cccd
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
  * @property PhieuXuatKho[] $phieuXuatKhos
  */
@@ -32,11 +33,12 @@ class TaiXe extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ho_ten', 'create_date', 'create_user'], 'required'],
+            [['ho_ten'], 'required'],
             [['create_date'], 'safe'],
             [['create_user'], 'integer'],
             [['ho_ten', 'dia_chi'], 'string', 'max' => 255],
             [['so_dien_thoai'], 'string', 'max' => 15],
+            [['cccd'], 'string', 'max' => 15],
         ];
     }
 
@@ -50,6 +52,7 @@ class TaiXe extends \yii\db\ActiveRecord
             'ho_ten' => 'Ho Ten',
             'dia_chi' => 'Dia Chi',
             'so_dien_thoai' => 'So Dien Thoai',
+            'cccd' => 'Căn cước công dân',
             'create_date' => 'Create Date',
             'create_user' => 'Create User',
         ];

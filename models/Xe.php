@@ -11,10 +11,10 @@ use Yii;
  * @property string $hieu_xe
  * @property string|null $hang_xe
  * @property string|null $nam_san_xuat
- * @property int $bien_so_xe
+ * @property string $bien_so_xe
  * @property string|null $hinh_xe
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
  * @property PhieuXuatKho[] $phieuXuatKhos
  */
@@ -34,10 +34,10 @@ class Xe extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['hieu_xe', 'bien_so_xe', 'create_date', 'create_user'], 'required'],
+            [['hieu_xe', 'bien_so_xe'], 'required'],
             [['nam_san_xuat', 'create_date'], 'safe'],
-            [['bien_so_xe', 'create_user'], 'integer'],
-            [['hieu_xe', 'hang_xe', 'hinh_xe'], 'string', 'max' => 255],
+            [[ 'create_user'], 'integer'],
+            [['hieu_xe', 'hang_xe', 'hinh_xe','bien_so_xe'], 'string', 'max' => 255],
         ];
     }
 

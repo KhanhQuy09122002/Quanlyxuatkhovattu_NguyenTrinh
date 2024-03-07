@@ -9,8 +9,8 @@ use Yii;
  *
  * @property int $id
  * @property string $ten_loai_vat_tu
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
  * @property VatTu[] $vatTus
  */
@@ -30,7 +30,7 @@ class LoaiVatTu extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ten_loai_vat_tu', 'create_date', 'create_user'], 'required'],
+            [['ten_loai_vat_tu'], 'required'],
             [['create_date'], 'safe'],
             [['create_user'], 'integer'],
             [['ten_loai_vat_tu'], 'string', 'max' => 255],

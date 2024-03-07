@@ -15,10 +15,10 @@ use Yii;
  * @property string|null $ghi_chu
  * @property int|null $id_nguoi_duyet
  * @property string $trang_thai
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
- * @property NguoiDung $nguoiDuyet
+ * @property User $nguoiDuyet
  * @property PhieuXuatKho $phieuXuatKho
  * @property VatTu $vatTu
  */
@@ -38,13 +38,13 @@ class VatTuXuat extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['so_luong_yeu_cau', 'id_phieu_xuat_kho', 'id_vat_tu', 'trang_thai', 'create_date', 'create_user'], 'required'],
+            [['so_luong_yeu_cau', 'id_phieu_xuat_kho', 'id_vat_tu', 'trang_thai'], 'required'],
             [['so_luong_yeu_cau', 'so_luong_duoc_duyet'], 'number'],
             [['id_phieu_xuat_kho', 'id_vat_tu', 'id_nguoi_duyet', 'create_user'], 'integer'],
             [['ghi_chu'], 'string'],
             [['create_date'], 'safe'],
             [['trang_thai'], 'string', 'max' => 15],
-            [['id_nguoi_duyet'], 'exist', 'skipOnError' => true, 'targetClass' => NguoiDung::class, 'targetAttribute' => ['id_nguoi_duyet' => 'id']],
+            [['id_nguoi_duyet'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['id_nguoi_duyet' => 'id']],
             [['id_phieu_xuat_kho'], 'exist', 'skipOnError' => true, 'targetClass' => PhieuXuatKho::class, 'targetAttribute' => ['id_phieu_xuat_kho' => 'id']],
             [['id_vat_tu'], 'exist', 'skipOnError' => true, 'targetClass' => VatTu::class, 'targetAttribute' => ['id_vat_tu' => 'id']],
         ];
@@ -76,7 +76,7 @@ class VatTuXuat extends \yii\db\ActiveRecord
      */
     public function getNguoiDuyet()
     {
-        return $this->hasOne(NguoiDung::class, ['id' => 'id_nguoi_duyet']);
+        return $this->hasOne(User::class, ['id' => 'id_nguoi_duyet']);
     }
 
     /**

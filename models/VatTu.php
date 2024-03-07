@@ -12,8 +12,8 @@ use Yii;
  * @property float $so_luong
  * @property float $don_gia
  * @property int $id_loai_vat_tu
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
  * @property LoaiVatTu $loaiVatTu
  * @property VatTuBocTach[] $vatTuBocTaches
@@ -35,7 +35,7 @@ class VatTu extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ten_vat_tu', 'so_luong', 'don_gia', 'id_loai_vat_tu', 'create_date', 'create_user'], 'required'],
+            [['ten_vat_tu', 'so_luong', 'don_gia', 'id_loai_vat_tu'], 'required'],
             [['so_luong', 'don_gia'], 'number'],
             [['id_loai_vat_tu', 'create_user'], 'integer'],
             [['create_date'], 'safe'],

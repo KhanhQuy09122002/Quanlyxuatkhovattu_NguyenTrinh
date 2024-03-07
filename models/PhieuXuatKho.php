@@ -18,12 +18,12 @@ use Yii;
  * @property int|null $id_nguoi_duyet
  * @property float $thanh_tien
  * @property string $trang_thai
- * @property string $create_date
- * @property int $create_user
+ * @property string|null $create_date
+ * @property int|null $create_user
  *
- * @property NguoiDung $boPhanYc
+ * @property User $boPhanYc
  * @property CongTrinh $congTrinh
- * @property NguoiDung $nguoiDuyet
+ * @property User $nguoiDuyet
  * @property TaiXe $taiXe
  * @property VatTuXuat[] $vatTuXuats
  * @property Xe $xe
@@ -44,17 +44,17 @@ class PhieuXuatKho extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['thoi_gian_yeu_cau', 'id_cong_trinh', 'id_bo_phan_yc', 'ly_do', 'id_tai_xe', 'id_xe', 'thanh_tien', 'trang_thai', 'create_date', 'create_user'], 'required'],
+            [['thoi_gian_yeu_cau', 'id_cong_trinh', 'id_bo_phan_yc', 'ly_do', 'id_tai_xe', 'id_xe', 'thanh_tien', 'trang_thai'], 'required'],
             [['thoi_gian_yeu_cau', 'create_date'], 'safe'],
             [['id_cong_trinh', 'id_bo_phan_yc', 'id_tai_xe', 'id_xe', 'id_nguoi_duyet', 'create_user'], 'integer'],
             [['ly_do', 'nguoi_ky'], 'string'],
             [['thanh_tien'], 'number'],
             [['trang_thai'], 'string', 'max' => 12],
             [['id_cong_trinh'], 'exist', 'skipOnError' => true, 'targetClass' => CongTrinh::class, 'targetAttribute' => ['id_cong_trinh' => 'id']],
-            [['id_nguoi_duyet'], 'exist', 'skipOnError' => true, 'targetClass' => NguoiDung::class, 'targetAttribute' => ['id_nguoi_duyet' => 'id']],
+            [['id_nguoi_duyet'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['id_nguoi_duyet' => 'id']],
             [['id_tai_xe'], 'exist', 'skipOnError' => true, 'targetClass' => TaiXe::class, 'targetAttribute' => ['id_tai_xe' => 'id']],
             [['id_xe'], 'exist', 'skipOnError' => true, 'targetClass' => Xe::class, 'targetAttribute' => ['id_xe' => 'id']],
-            [['id_bo_phan_yc'], 'exist', 'skipOnError' => true, 'targetClass' => NguoiDung::class, 'targetAttribute' => ['id_bo_phan_yc' => 'id']],
+            [['id_bo_phan_yc'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['id_bo_phan_yc' => 'id']],
         ];
     }
 
@@ -87,7 +87,7 @@ class PhieuXuatKho extends \yii\db\ActiveRecord
      */
     public function getBoPhanYc()
     {
-        return $this->hasOne(NguoiDung::class, ['id' => 'id_bo_phan_yc']);
+        return $this->hasOne(User::class, ['id' => 'id_bo_phan_yc']);
     }
 
     /**
@@ -107,7 +107,7 @@ class PhieuXuatKho extends \yii\db\ActiveRecord
      */
     public function getNguoiDuyet()
     {
-        return $this->hasOne(NguoiDung::class, ['id' => 'id_nguoi_duyet']);
+        return $this->hasOne(User::class, ['id' => 'id_nguoi_duyet']);
     }
 
     /**

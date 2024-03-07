@@ -6,6 +6,51 @@
 
 	<li class="treeview">
 	  <a href="#">
+		<i class="fa fa-dashboard"></i> <span><?= Yii::t('app', 'Công trình')?></span>
+		<span class="pull-right-container">
+		  <i class="fa fa-angle-left pull-right"></i>
+		</span>
+	  </a>
+		<ul class="treeview-menu">
+
+		<li><a href="/congtrinh/cong-trinh"><i class="fa fa-circle-o"></i> Công trình </a></li> 
+		
+	   
+	  </ul>
+	</li>
+
+	<li class="treeview">
+	  <a href="#">
+		<i class="fa fa-dashboard"></i> <span><?= Yii::t('app', 'Xuất kho')?></span>
+		<span class="pull-right-container">
+		  <i class="fa fa-angle-left pull-right"></i>
+		</span>
+	  </a>
+		<ul class="treeview-menu">
+
+		<li><a href="/xuatkho/phieu-xuat-kho"><i class="fa fa-circle-o"></i> Phiếu xuất kho </a></li> 
+		
+	   
+	  </ul>
+	</li>
+
+	<li class="treeview">
+	  <a href="#">
+		<i class="fa fa-dashboard"></i> <span><?= Yii::t('app', 'Vận chuyển')?></span>
+		<span class="pull-right-container">
+		  <i class="fa fa-angle-left pull-right"></i>
+		</span>
+	  </a>
+		<ul class="treeview-menu">
+
+		<li><a href="/taixe/tai-xe"><i class="fa fa-circle-o"></i> Tài xế </a></li> 
+		<li><a href="/xe/xe"><i class="fa fa-circle-o"></i> Xe </a></li> 
+	   
+	  </ul>
+	</li>
+
+	<li class="treeview">
+	  <a href="#">
 		<i class="fa fa-dashboard"></i> <span><?= Yii::t('app', 'Vật tư')?></span>
 		<span class="pull-right-container">
 		  <i class="fa fa-angle-left pull-right"></i>
@@ -13,24 +58,11 @@
 	  </a>
 		<ul class="treeview-menu">
 
-		<li><a href="#"><i class="fa fa-circle-o"></i> Nhập vật tư </a></li> 
-		<li><a href="#"><i class="fa fa-circle-o"></i> Loại vật tư </a></li> 
+		<li><a href="/vattu/vat-tu"><i class="fa fa-circle-o"></i> Vật tư </a></li> 
+		<li><a href="/vattu/loai-vat-tu"><i class="fa fa-circle-o"></i> Loại vật tư </a></li> 
 	   
 	  </ul>
 	</li>
-
-	<li class="treeview">
-	  <a href="#">
-		<i class="fa fa-dashboard"></i> <span>LINKS</span>
-		<span class="pull-right-container">
-		  <i class="fa fa-angle-left pull-right"></i>
-		</span>
-	  </a>
-		<ul class="treeview-menu">
-			<li><a href="#"><i class="fa fa-circle-o"></i>fff</a></li>
-		</ul>
-	</li>
-
 
 	  <li>
 		  <a href="#">
