@@ -84326,3 +84326,2536 @@ $_SERVER = [
     'REQUEST_TIME' => 1709692942
 >>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 ]
+2024-03-07 16:05:05 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('tai_xe')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('tai_xe', 'schema', false)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('tai_xe')
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\vanchuyen\taixe\models\search\TaiXeSearch), Array)
+#17 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\models\search\TaiXeSearch.php(51): yii\base\Model->validate()
+#18 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\controllers\TaiXeController.php(43): app\modules\vanchuyen\taixe\models\search\TaiXeSearch->search(Array)
+#19 [internal function]: app\modules\vanchuyen\taixe\controllers\TaiXeController->actionIndex()
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('taixe/tai-xe', Array)
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('tai_xe')
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('tai_xe', 'schema', false)
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('tai_xe')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\vanchuyen\taixe\models\search\TaiXeSearch), Array)
+#15 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\models\search\TaiXeSearch.php(51): yii\base\Model->validate()
+#16 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\controllers\TaiXeController.php(43): app\modules\vanchuyen\taixe\models\search\TaiXeSearch->search(Array)
+#17 [internal function]: app\modules\vanchuyen\taixe\controllers\TaiXeController->actionIndex()
+#18 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('taixe/tai-xe', Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'qlvt2'
+)
+
+2024-03-07 16:05:03 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64207'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/taixe/tai-xe'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/taixe/tai-xe'
+    'PHP_SELF' => '/index.php/taixe/tai-xe'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/xe/xe'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802303.6043
+    'REQUEST_TIME' => 1709802303
+]
+2024-03-07 16:06:08 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('tai_xe')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('tai_xe', 'schema', false)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('tai_xe')
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\vanchuyen\taixe\models\search\TaiXeSearch), Array)
+#17 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\models\search\TaiXeSearch.php(51): yii\base\Model->validate()
+#18 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\controllers\TaiXeController.php(43): app\modules\vanchuyen\taixe\models\search\TaiXeSearch->search(Array)
+#19 [internal function]: app\modules\vanchuyen\taixe\controllers\TaiXeController->actionIndex()
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('taixe/tai-xe', Array)
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('tai_xe')
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('tai_xe', 'schema', false)
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('tai_xe')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\vanchuyen\taixe\models\search\TaiXeSearch), Array)
+#15 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\models\search\TaiXeSearch.php(51): yii\base\Model->validate()
+#16 C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\controllers\TaiXeController.php(43): app\modules\vanchuyen\taixe\models\search\TaiXeSearch->search(Array)
+#17 [internal function]: app\modules\vanchuyen\taixe\controllers\TaiXeController->actionIndex()
+#18 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('taixe/tai-xe', Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'qlvt2'
+)
+
+2024-03-07 16:06:08 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64214'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/taixe/tai-xe'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/taixe/tai-xe'
+    'PHP_SELF' => '/index.php/taixe/tai-xe'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/xe/xe'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802368.1969
+    'REQUEST_TIME' => 1709802368
+]
+2024-03-07 16:06:10 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('xe')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('xe', 'schema', false)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('xe')
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\vanchuyen\xe\models\search\XeSearch), Array)
+#17 C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\models\search\XeSearch.php(52): yii\base\Model->validate()
+#18 C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\controllers\XeController.php(49): app\modules\vanchuyen\xe\models\search\XeSearch->search(Array)
+#19 [internal function]: app\modules\vanchuyen\xe\controllers\XeController->actionIndex()
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('xe/xe', Array)
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('xe')
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('xe', 'schema', false)
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('xe')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\vanchuyen\xe\models\search\XeSearch), Array)
+#15 C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\models\search\XeSearch.php(52): yii\base\Model->validate()
+#16 C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\controllers\XeController.php(49): app\modules\vanchuyen\xe\models\search\XeSearch->search(Array)
+#17 [internal function]: app\modules\vanchuyen\xe\controllers\XeController->actionIndex()
+#18 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('xe/xe', Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'qlvt2'
+)
+
+2024-03-07 16:06:10 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64217'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/xe/xe'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/xe/xe'
+    'PHP_SELF' => '/index.php/xe/xe'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/congtrinh/cong-trinh'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802370.1785
+    'REQUEST_TIME' => 1709802370
+]
+2024-03-07 16:06:11 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('cong_trinh')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('cong_trinh', 'schema', false)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('cong_trinh')
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\congtrinh\models\search\CongTrinhSearch), Array)
+#17 C:\xampp\htdocs\QLVT\modules\congtrinh\models\search\CongTrinhSearch.php(52): yii\base\Model->validate()
+#18 C:\xampp\htdocs\QLVT\modules\congtrinh\controllers\CongTrinhController.php(43): app\modules\congtrinh\models\search\CongTrinhSearch->search(Array)
+#19 [internal function]: app\modules\congtrinh\controllers\CongTrinhController->actionIndex()
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('congtrinh/cong-...', Array)
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('cong_trinh')
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('cong_trinh', 'schema', false)
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('cong_trinh')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\congtrinh\models\search\CongTrinhSearch), Array)
+#15 C:\xampp\htdocs\QLVT\modules\congtrinh\models\search\CongTrinhSearch.php(52): yii\base\Model->validate()
+#16 C:\xampp\htdocs\QLVT\modules\congtrinh\controllers\CongTrinhController.php(43): app\modules\congtrinh\models\search\CongTrinhSearch->search(Array)
+#17 [internal function]: app\modules\congtrinh\controllers\CongTrinhController->actionIndex()
+#18 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('congtrinh/cong-...', Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'qlvt2'
+)
+
+2024-03-07 16:06:11 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64218'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/congtrinh/cong-trinh'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/congtrinh/cong-trinh'
+    'PHP_SELF' => '/index.php/congtrinh/cong-trinh'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/xuatkho/phieu-xuat-kho'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802371.6988
+    'REQUEST_TIME' => 1709802371
+]
+2024-03-07 16:06:13 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('phieu_xuat_kho')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('phieu_xuat_kho', 'schema', false)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('phieu_xuat_kho')
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#15 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#16 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\xuatkho\models\search\PhieuXuatKhoSearch), Array)
+#17 C:\xampp\htdocs\QLVT\modules\xuatkho\models\search\PhieuXuatKhoSearch.php(54): yii\base\Model->validate()
+#18 C:\xampp\htdocs\QLVT\modules\xuatkho\controllers\PhieuXuatKhoController.php(44): app\modules\xuatkho\models\search\PhieuXuatKhoSearch->search(Array)
+#19 [internal function]: app\modules\xuatkho\controllers\PhieuXuatKhoController->actionIndex()
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('xuatkho/phieu-x...', Array)
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#26 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('phieu_xuat_kho')
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('phieu_xuat_kho', 'schema', false)
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(439): yii\db\Schema->getTableSchema('phieu_xuat_kho')
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\ActiveRecord.php(473): yii\db\ActiveRecord::getTableSchema()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(498): yii\db\ActiveRecord->attributes()
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\BaseActiveRecord.php(289): yii\db\BaseActiveRecord->hasAttribute('id')
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\validators\Validator.php(257): yii\db\BaseActiveRecord->__get('id')
+#14 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\modules\xuatkho\models\search\PhieuXuatKhoSearch), Array)
+#15 C:\xampp\htdocs\QLVT\modules\xuatkho\models\search\PhieuXuatKhoSearch.php(54): yii\base\Model->validate()
+#16 C:\xampp\htdocs\QLVT\modules\xuatkho\controllers\PhieuXuatKhoController.php(44): app\modules\xuatkho\models\search\PhieuXuatKhoSearch->search(Array)
+#17 [internal function]: app\modules\xuatkho\controllers\PhieuXuatKhoController->actionIndex()
+#18 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('xuatkho/phieu-x...', Array)
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#24 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'qlvt2'
+)
+
+2024-03-07 16:06:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64220'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/xuatkho/phieu-xuat-kho'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/xuatkho/phieu-xuat-kho'
+    'PHP_SELF' => '/index.php/xuatkho/phieu-xuat-kho'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/xe/xe'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802373.074
+    'REQUEST_TIME' => 1709802373
+]
+2024-03-07 16:06:15 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '<<' (T_SL), expecting end of file in C:\xampp\htdocs\QLVT\modules\vattu\models\base\LoaiVatTuBase.php:4
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\vat...')
+#1 C:\xampp\htdocs\QLVT\modules\vattu\models\LoaiVatTu.php(8): spl_autoload_call('app\\modules\\vat...')
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\BaseYii.php(293): include('C:\\xampp\\htdocs...')
+#3 [internal function]: yii\BaseYii::autoload('app\\modules\\vat...')
+#4 C:\xampp\htdocs\QLVT\modules\vattu\models\search\LoaiVatTuSearch.php(13): spl_autoload_call('app\\modules\\vat...')
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\BaseYii.php(293): include('C:\\xampp\\htdocs...')
+#6 [internal function]: yii\BaseYii::autoload('app\\modules\\vat...')
+#7 C:\xampp\htdocs\QLVT\modules\vattu\controllers\LoaiVatTuController.php(42): spl_autoload_call('app\\modules\\vat...')
+#8 [internal function]: app\modules\vattu\controllers\LoaiVatTuController->actionIndex()
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('vattu/loai-vat-...', Array)
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2024-03-07 16:06:14 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64224'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/vattu/loai-vat-tu'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/vattu/loai-vat-tu'
+    'PHP_SELF' => '/index.php/vattu/loai-vat-tu'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/vattu/vat-tu'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802374.9492
+    'REQUEST_TIME' => 1709802374
+]
+2024-03-07 16:06:19 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '<<' (T_SL), expecting end of file in C:\xampp\htdocs\QLVT\modules\vattu\models\base\VatTuBase.php:4
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\vat...')
+#1 C:\xampp\htdocs\QLVT\modules\vattu\models\VatTu.php(8): spl_autoload_call('app\\modules\\vat...')
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\BaseYii.php(293): include('C:\\xampp\\htdocs...')
+#3 [internal function]: yii\BaseYii::autoload('app\\modules\\vat...')
+#4 C:\xampp\htdocs\QLVT\modules\vattu\models\search\VatTuSearch.php(13): spl_autoload_call('app\\modules\\vat...')
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\BaseYii.php(293): include('C:\\xampp\\htdocs...')
+#6 [internal function]: yii\BaseYii::autoload('app\\modules\\vat...')
+#7 C:\xampp\htdocs\QLVT\modules\vattu\controllers\VatTuController.php(41): spl_autoload_call('app\\modules\\vat...')
+#8 [internal function]: app\modules\vattu\controllers\VatTuController->actionIndex()
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('vattu/vat-tu', Array)
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2024-03-07 16:06:19 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64226'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/vattu/vat-tu'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/vattu/vat-tu'
+    'PHP_SELF' => '/index.php/vattu/vat-tu'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/user-management/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802379.3665
+    'REQUEST_TIME' => 1709802379
+]
+2024-03-07 16:06:21 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(406): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(430): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#12 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Query.php(157): yii\db\Connection->getQueryBuilder()
+#13 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Query.php(320): yii\db\Query->createCommand(Object(yii\db\Connection))
+#14 C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\rbacDB\Route.php(254): yii\db\Query->column()
+#15 C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\rbacDB\Route.php(229): webvimark\modules\UserManagement\models\rbacDB\Route::isInCommonPermission('/user-managemen...')
+#16 C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\components\GhostAccessControl.php(45): webvimark\modules\UserManagement\models\rbacDB\Route::isFreeAccess('/user-managemen...', Object(yii\base\InlineAction))
+#17 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\ActionFilter.php(77): webvimark\modules\UserManagement\components\GhostAccessControl->beforeAction(Object(yii\base\InlineAction))
+#18 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#20 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Controller.php(218): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 C:\xampp\htdocs\QLVT\vendor\webvimark\components\AdminDefaultController.php(332): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(176): webvimark\components\AdminDefaultController->beforeAction(Object(yii\base\InlineAction))
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#25 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user-management...', Array)
+#26 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#28 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'qlvt2' in C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(406): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(430): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#8 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#9 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#10 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Query.php(157): yii\db\Connection->getQueryBuilder()
+#11 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\db\Query.php(320): yii\db\Query->createCommand(Object(yii\db\Connection))
+#12 C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\rbacDB\Route.php(254): yii\db\Query->column()
+#13 C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\rbacDB\Route.php(229): webvimark\modules\UserManagement\models\rbacDB\Route::isInCommonPermission('/user-managemen...')
+#14 C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\components\GhostAccessControl.php(45): webvimark\modules\UserManagement\models\rbacDB\Route::isFreeAccess('/user-managemen...', Object(yii\base\InlineAction))
+#15 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\ActionFilter.php(77): webvimark\modules\UserManagement\components\GhostAccessControl->beforeAction(Object(yii\base\InlineAction))
+#16 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#17 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Component.php(633): call_user_func(Array, Object(yii\base\ActionEvent))
+#18 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(297): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#19 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Controller.php(218): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#20 C:\xampp\htdocs\QLVT\vendor\webvimark\components\AdminDefaultController.php(332): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#21 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Controller.php(176): webvimark\components\AdminDefaultController->beforeAction(Object(yii\base\InlineAction))
+#22 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#23 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user-management...', Array)
+#24 C:\xampp\htdocs\QLVT\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\QLVT\web\index.php(12): yii\base\Application->run()
+#26 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'qlvt2'
+)
+
+2024-03-07 16:06:21 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64227'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/user-management/user'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/user-management/user'
+    'PHP_SELF' => '/index.php/user-management/user'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/user-management/auth/change-own-password'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802381.1463
+    'REQUEST_TIME' => 1709802381
+]
+2024-03-07 16:06:47 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'modules/user-management/back' does not exist: C:\xampp\htdocs\QLVT\vendor/webvimark/module-user-management/messages/vi-VN/back.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT\vendor/webvimark/module-user-management/messages/vi/back.php
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\UserManagementModule.php:239
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\User.php:324
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\models\search\UserSearch.php:47
+2024-03-07 16:06:48 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'widgets/GridPageSize/app' does not exist: C:\xampp\htdocs\QLVT\vendor\webvimark\grid-page-size/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT\vendor\webvimark\grid-page-size/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\grid-page-size\GridPageSize.php:106
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\grid-page-size\GridPageSize.php:81
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\views\user\index.php:55
+2024-03-07 16:06:48 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'widgets/GridBulkActions/app' does not exist: C:\xampp\htdocs\QLVT\vendor\webvimark\grid-bulk-actions/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT\vendor\webvimark\grid-bulk-actions/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\grid-bulk-actions\GridBulkActions.php:86
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\module-user-management\views\user\index.php:75
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\components\BaseController.php:38
+2024-03-07 16:06:49 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\themes\adminlte\layouts\admin\admin_left_menu.php:5
+    in C:\xampp\htdocs\QLVT\themes\adminlte\layouts\main.php:82
+    in C:\xampp\htdocs\QLVT\vendor\webvimark\components\BaseController.php:38
+2024-03-07 16:06:47 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709795043
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709631298
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e966e552f66'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64228'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/user-management/user'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/user-management/user'
+    'PHP_SELF' => '/index.php/user-management/user'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/user-management/auth/change-own-password'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802407.1641
+    'REQUEST_TIME' => 1709802407
+]
+2024-03-07 16:06:55 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\modules\congtrinh\views\cong-trinh\_columns.php:56
+    in C:\xampp\htdocs\QLVT\modules\congtrinh\views\cong-trinh\index.php:26
+    in C:\xampp\htdocs\QLVT\modules\congtrinh\controllers\CongTrinhController.php:47
+2024-03-07 16:06:54 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709795043
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709631298
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e966e552f66'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64271'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/congtrinh/cong-trinh'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/congtrinh/cong-trinh'
+    'PHP_SELF' => '/index.php/congtrinh/cong-trinh'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/user-management/user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802414.7978
+    'REQUEST_TIME' => 1709802414
+]
+2024-03-07 16:07:02 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\modules\xuatkho\views\phieu-xuat-kho\_columns.php:72
+    in C:\xampp\htdocs\QLVT\modules\xuatkho\views\phieu-xuat-kho\index.php:26
+    in C:\xampp\htdocs\QLVT\modules\xuatkho\controllers\PhieuXuatKhoController.php:48
+2024-03-07 16:07:02 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709795043
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709631298
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e966e552f66'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64327'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/xuatkho/phieu-xuat-kho'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/xuatkho/phieu-xuat-kho'
+    'PHP_SELF' => '/index.php/xuatkho/phieu-xuat-kho'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/congtrinh/cong-trinh'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802422.5089
+    'REQUEST_TIME' => 1709802422
+]
+2024-03-07 16:07:06 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\views\tai-xe\_columns.php:48
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\views\tai-xe\index.php:26
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\controllers\TaiXeController.php:47
+2024-03-07 16:07:05 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709795043
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709631298
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e966e552f66'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64382'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/taixe/tai-xe'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/taixe/tai-xe'
+    'PHP_SELF' => '/index.php/taixe/tai-xe'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/xuatkho/phieu-xuat-kho'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802425.8826
+    'REQUEST_TIME' => 1709802425
+]
+2024-03-07 16:07:08 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\views\xe\_columns.php:52
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\views\xe\index.php:26
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\xe\controllers\XeController.php:53
+2024-03-07 16:07:08 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709795043
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709631298
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e966e552f66'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64437'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/xe/xe'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/xe/xe'
+    'PHP_SELF' => '/index.php/xe/xe'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/taixe/tai-xe'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802428.1386
+    'REQUEST_TIME' => 1709802428
+]
+2024-03-07 16:07:10 [::1][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\QLVT/messages/vi-VN/app.php Fallback file does not exist as well: C:\xampp\htdocs\QLVT/messages/vi/app.php
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\views\tai-xe\_columns.php:48
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\views\tai-xe\index.php:26
+    in C:\xampp\htdocs\QLVT\modules\vanchuyen\taixe\controllers\TaiXeController.php:47
+2024-03-07 16:07:10 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_clck' => '6ssybb|2|fff|0|1367'
+    'PHPSESSID' => 'ofmuucv2apf7j7v53ra4boo2hd'
+    '_csrf' => '1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost:9999/'
+    '_um_last_attempt' => 1709795043
+    '_um_attempt_count' => 1
+    '__id' => 1
+    '__authKey' => 'kz2px152FAWlkHbkZoCiXgBAd-S8SSjF'
+    '__auth_last_update' => 1709631298
+    '__userRoles' => [
+        0 => 'Admin'
+        1 => 'bientapvien'
+        2 => 'Default'
+        3 => 'thongketruycap'
+    ]
+    '__userPermissions' => [
+        0 => 'assignRolesToUsers'
+        1 => 'cauhinh'
+        2 => 'changeOwnPassword'
+        3 => 'changeUserPassword'
+        4 => 'createUsers'
+        5 => 'dangtin'
+        6 => 'deleteUsers'
+        7 => 'editUsers'
+        8 => 'per_dashboard'
+        9 => 'permission_thongketruycap'
+        10 => 'qltaikhoan'
+        11 => 'truycaptrangadmin'
+        12 => 'user-default'
+        13 => 'viewUserRoles'
+        14 => 'viewUsers'
+    ]
+    '__userRoutes' => [
+        0 => '/admin/*'
+        1 => '/admin/catelogies/*'
+        2 => '/admin/catelogies/*'
+        3 => '/admin/catelogies/bulk-delete'
+        4 => '/admin/catelogies/bulk-delete'
+        5 => '/admin/catelogies/create'
+        6 => '/admin/catelogies/create'
+        7 => '/admin/catelogies/delete'
+        8 => '/admin/catelogies/delete'
+        9 => '/admin/catelogies/index'
+        10 => '/admin/catelogies/index'
+        11 => '/admin/catelogies/update'
+        12 => '/admin/catelogies/update'
+        13 => '/admin/catelogies/view'
+        14 => '/admin/catelogies/view'
+        15 => '/admin/default/*'
+        16 => '/admin/default/*'
+        17 => '/admin/default/*'
+        18 => '/admin/default/*'
+        19 => '/admin/default/index'
+        20 => '/admin/default/index'
+        21 => '/admin/default/index'
+        22 => '/admin/default/index'
+        23 => '/admin/default/index'
+        24 => '/admin/links/*'
+        25 => '/admin/links/*'
+        26 => '/admin/links/bulk-delete'
+        27 => '/admin/links/bulk-delete'
+        28 => '/admin/links/create'
+        29 => '/admin/links/create'
+        30 => '/admin/links/delete'
+        31 => '/admin/links/delete'
+        32 => '/admin/links/index'
+        33 => '/admin/links/index'
+        34 => '/admin/links/update'
+        35 => '/admin/links/update'
+        36 => '/admin/links/view'
+        37 => '/admin/links/view'
+        38 => '/admin/news/*'
+        39 => '/admin/news/*'
+        40 => '/admin/news/bulk-delete'
+        41 => '/admin/news/bulk-delete'
+        42 => '/admin/news/create'
+        43 => '/admin/news/create'
+        44 => '/admin/news/del-folder-not-used'
+        45 => '/admin/news/del-folder-not-used'
+        46 => '/admin/news/delete'
+        47 => '/admin/news/delete'
+        48 => '/admin/news/index'
+        49 => '/admin/news/index'
+        50 => '/admin/news/update'
+        51 => '/admin/news/update'
+        52 => '/admin/news/view'
+        53 => '/admin/news/view'
+        54 => '/admin/settings/*'
+        55 => '/admin/settings/*'
+        56 => '/admin/settings/bulk-delete'
+        57 => '/admin/settings/bulk-delete'
+        58 => '/admin/settings/create'
+        59 => '/admin/settings/create'
+        60 => '/admin/settings/delete'
+        61 => '/admin/settings/delete'
+        62 => '/admin/settings/index'
+        63 => '/admin/settings/index'
+        64 => '/admin/settings/update'
+        65 => '/admin/settings/update'
+        66 => '/admin/settings/view'
+        67 => '/admin/settings/view'
+        68 => '/admin/socials/*'
+        69 => '/admin/socials/*'
+        70 => '/admin/socials/bulk-delete'
+        71 => '/admin/socials/bulk-delete'
+        72 => '/admin/socials/create'
+        73 => '/admin/socials/create'
+        74 => '/admin/socials/delete'
+        75 => '/admin/socials/delete'
+        76 => '/admin/socials/index'
+        77 => '/admin/socials/index'
+        78 => '/admin/socials/update'
+        79 => '/admin/socials/update'
+        80 => '/admin/socials/view'
+        81 => '/admin/socials/view'
+        82 => '/admin/thong-ke-truy-cap/*'
+        83 => '/admin/thong-ke-truy-cap/*'
+        84 => '/admin/thong-ke-truy-cap/*'
+        85 => '/admin/thong-ke-truy-cap/bulk-delete'
+        86 => '/admin/thong-ke-truy-cap/bulk-delete'
+        87 => '/admin/thong-ke-truy-cap/bulk-delete'
+        88 => '/admin/thong-ke-truy-cap/create'
+        89 => '/admin/thong-ke-truy-cap/create'
+        90 => '/admin/thong-ke-truy-cap/create'
+        91 => '/admin/thong-ke-truy-cap/delete'
+        92 => '/admin/thong-ke-truy-cap/delete'
+        93 => '/admin/thong-ke-truy-cap/delete'
+        94 => '/admin/thong-ke-truy-cap/index'
+        95 => '/admin/thong-ke-truy-cap/index'
+        96 => '/admin/thong-ke-truy-cap/index'
+        97 => '/admin/thong-ke-truy-cap/update'
+        98 => '/admin/thong-ke-truy-cap/update'
+        99 => '/admin/thong-ke-truy-cap/update'
+        100 => '/admin/thong-ke-truy-cap/view'
+        101 => '/admin/thong-ke-truy-cap/view'
+        102 => '/admin/thong-ke-truy-cap/view'
+        103 => '/site/*'
+        104 => '/site/cat'
+        105 => '/site/index'
+        106 => '/site/news'
+        107 => '/site/newsletter'
+        108 => '/site/not-found'
+        109 => '/site/search'
+        110 => '/user-management/*'
+        111 => '/user-management/auth-item-group/*'
+        112 => '/user-management/auth-item-group/bulk-activate'
+        113 => '/user-management/auth-item-group/bulk-deactivate'
+        114 => '/user-management/auth-item-group/bulk-delete'
+        115 => '/user-management/auth-item-group/create'
+        116 => '/user-management/auth-item-group/delete'
+        117 => '/user-management/auth-item-group/grid-page-size'
+        118 => '/user-management/auth-item-group/grid-sort'
+        119 => '/user-management/auth-item-group/index'
+        120 => '/user-management/auth-item-group/toggle-attribute'
+        121 => '/user-management/auth-item-group/update'
+        122 => '/user-management/auth-item-group/view'
+        123 => '/user-management/auth/*'
+        124 => '/user-management/auth/captcha'
+        125 => '/user-management/auth/change-own-password'
+        126 => '/user-management/auth/change-own-password'
+        127 => '/user-management/auth/confirm-email'
+        128 => '/user-management/auth/confirm-email-receive'
+        129 => '/user-management/auth/confirm-registration-email'
+        130 => '/user-management/auth/login'
+        131 => '/user-management/auth/logout'
+        132 => '/user-management/auth/password-recovery'
+        133 => '/user-management/auth/password-recovery-receive'
+        134 => '/user-management/auth/registration'
+        135 => '/user-management/permission/*'
+        136 => '/user-management/permission/bulk-activate'
+        137 => '/user-management/permission/bulk-deactivate'
+        138 => '/user-management/permission/bulk-delete'
+        139 => '/user-management/permission/create'
+        140 => '/user-management/permission/delete'
+        141 => '/user-management/permission/grid-page-size'
+        142 => '/user-management/permission/grid-sort'
+        143 => '/user-management/permission/index'
+        144 => '/user-management/permission/refresh-routes'
+        145 => '/user-management/permission/set-child-permissions'
+        146 => '/user-management/permission/set-child-routes'
+        147 => '/user-management/permission/toggle-attribute'
+        148 => '/user-management/permission/update'
+        149 => '/user-management/permission/view'
+        150 => '/user-management/role/*'
+        151 => '/user-management/role/bulk-activate'
+        152 => '/user-management/role/bulk-deactivate'
+        153 => '/user-management/role/bulk-delete'
+        154 => '/user-management/role/create'
+        155 => '/user-management/role/delete'
+        156 => '/user-management/role/grid-page-size'
+        157 => '/user-management/role/grid-sort'
+        158 => '/user-management/role/index'
+        159 => '/user-management/role/set-child-permissions'
+        160 => '/user-management/role/set-child-roles'
+        161 => '/user-management/role/toggle-attribute'
+        162 => '/user-management/role/update'
+        163 => '/user-management/role/view'
+        164 => '/user-management/user-permission/*'
+        165 => '/user-management/user-permission/set'
+        166 => '/user-management/user-permission/set'
+        167 => '/user-management/user-permission/set-roles'
+        168 => '/user-management/user-permission/set-roles'
+        169 => '/user-management/user-visit-log/*'
+        170 => '/user-management/user-visit-log/bulk-activate'
+        171 => '/user-management/user-visit-log/bulk-deactivate'
+        172 => '/user-management/user-visit-log/bulk-delete'
+        173 => '/user-management/user-visit-log/create'
+        174 => '/user-management/user-visit-log/delete'
+        175 => '/user-management/user-visit-log/grid-page-size'
+        176 => '/user-management/user-visit-log/grid-sort'
+        177 => '/user-management/user-visit-log/index'
+        178 => '/user-management/user-visit-log/toggle-attribute'
+        179 => '/user-management/user-visit-log/update'
+        180 => '/user-management/user-visit-log/view'
+        181 => '/user-management/user/*'
+        182 => '/user-management/user/bulk-activate'
+        183 => '/user-management/user/bulk-activate'
+        184 => '/user-management/user/bulk-deactivate'
+        185 => '/user-management/user/bulk-deactivate'
+        186 => '/user-management/user/bulk-delete'
+        187 => '/user-management/user/bulk-delete'
+        188 => '/user-management/user/change-password'
+        189 => '/user-management/user/change-password'
+        190 => '/user-management/user/create'
+        191 => '/user-management/user/create'
+        192 => '/user-management/user/delete'
+        193 => '/user-management/user/delete'
+        194 => '/user-management/user/grid-page-size'
+        195 => '/user-management/user/grid-page-size'
+        196 => '/user-management/user/grid-sort'
+        197 => '/user-management/user/index'
+        198 => '/user-management/user/index'
+        199 => '/user-management/user/toggle-attribute'
+        200 => '/user-management/user/update'
+        201 => '/user-management/user/update'
+        202 => '/user-management/user/view'
+        203 => '/user-management/user/view'
+    ]
+    '__visitorToken' => '65e966e552f66'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\QLVT\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64492'
+    'SERVER_SOFTWARE' => 'PHP 7.4.33 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9999'
+    'REQUEST_URI' => '/taixe/tai-xe'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\QLVT\\web\\index.php'
+    'PATH_INFO' => '/taixe/tai-xe'
+    'PHP_SELF' => '/index.php/taixe/tai-xe'
+    'HTTP_HOST' => 'localhost:9999'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:9999/xe/xe'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5'
+    'HTTP_COOKIE' => '_clck=6ssybb|2|fff|0|1367; PHPSESSID=ofmuucv2apf7j7v53ra4boo2hd; _csrf=1aaf038d5329c10fbaf07a3550a040a3604a5fa13ccbe6026ff811d948b81776a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zLq0se__rY6vxo4sh_XtjnhH0tEAZi6_%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1709802430.3284
+    'REQUEST_TIME' => 1709802430
+]
