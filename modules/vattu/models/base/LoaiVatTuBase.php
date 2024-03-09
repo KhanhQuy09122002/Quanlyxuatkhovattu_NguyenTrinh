@@ -1,11 +1,9 @@
 <?php
 
 namespace app\modules\vattu\models\base;
-<<<<<<< HEAD
-use app\modules\vattu\models\VatTu;
-=======
 
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
+use app\modules\vattu\models\VatTu;
+
 use Yii;
 
 /**
@@ -26,11 +24,7 @@ class LoaiVatTuBase extends \app\models\LoaiVatTu
     public function rules()
     {
         return [
-<<<<<<< HEAD
             [['ten_loai_vat_tu'], 'required'],
-=======
-            [['ten_loai_vat_tu', 'create_date', 'create_user'], 'required'],
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
             [['create_date'], 'safe'],
             [['create_user'], 'integer'],
             [['ten_loai_vat_tu'], 'string', 'max' => 255],
@@ -44,7 +38,7 @@ class LoaiVatTuBase extends \app\models\LoaiVatTu
     {
         return [
             'id' => 'ID',
-<<<<<<< HEAD
+
             'ten_loai_vat_tu' => 'Tên Loại Vật Tư',
             'create_date' => 'Ngày Tạo',
             'create_user' => 'Người Tạo',
@@ -61,12 +55,5 @@ class LoaiVatTuBase extends \app\models\LoaiVatTu
     {
         return $this->hasMany(VatTu::class, ['id_loai_vat_tu' => 'id']);
     }
-=======
-            'ten_loai_vat_tu' => 'Ten Loai Vat Tu',
-            'create_date' => 'Create Date',
-            'create_user' => 'Create User',
-        ];
-    }
 
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
 }

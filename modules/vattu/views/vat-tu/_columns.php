@@ -17,42 +17,27 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'ten_vat_tu',
-<<<<<<< HEAD
         'label' =>'Tên vật tư'
-=======
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'so_luong',
-<<<<<<< HEAD
         'label' =>'Số lượng'
-=======
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'don_gia',
-<<<<<<< HEAD
         'label' =>'Đơn giá'
-=======
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'id_loai_vat_tu',
-<<<<<<< HEAD
         'label' =>'Loại vật tư'
-=======
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'create_date',
-<<<<<<< HEAD
         'label' =>'Thời gian tạo'
-=======
->>>>>>> 215b5c68c707533558d52bf6bb1b1aa4b19dc5d2
     ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',

@@ -32,13 +32,6 @@ use app\modules\vanchuyen\xe\models\Xe;
  */
 class PhieuXuatKhoBase extends \app\models\PhieuXuatKho
 {
-    /**
-     * {@inheritdoc}
-     */
-    public static function tableName()
-    {
-        return 'phieu_xuat_kho';
-    }
 
     /**
      * {@inheritdoc}
