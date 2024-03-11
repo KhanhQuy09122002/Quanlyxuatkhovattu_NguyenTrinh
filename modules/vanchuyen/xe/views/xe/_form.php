@@ -15,11 +15,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'hang_xe')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'nam_san_xuat')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'nam_san_xuat')->dropDownList(
+    range(date('Y') - 100, date('Y')),
+    ['prompt' => 'Chọn năm']
+) ?>
 
     <?= $form->field($model, 'bien_so_xe')->textInput() ?>
 
-    <?= $form->field($model, 'hinh_xe')->fileInput(['id' => 'hinh_xe_input', 'maxlength' => true]) ?>
+    <?= $form->field($model, 'file')->fileInput()->label('Hình ảnh xe') ?>
 
     <?php
     // JavaScript code to store the value of hinh_xe when the form is submitted

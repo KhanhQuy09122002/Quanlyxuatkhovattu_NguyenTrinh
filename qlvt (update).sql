@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 07, 2024 lúc 09:44 AM
+-- Thời gian đã tạo: Th3 11, 2024 lúc 01:28 PM
 -- Phiên bản máy phục vụ: 10.4.27-MariaDB
 -- Phiên bản PHP: 7.4.33
 
@@ -1002,7 +1002,9 @@ INSERT INTO `user_visit_log` (`id`, `token`, `ip`, `language`, `user_agent`, `us
 (274, '65e84175ec616', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709719925, 'Chrome', 'Windows'),
 (275, '65e8ebb79cf03', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709763511, 'Chrome', 'Windows'),
 (276, '65e9182f3765f', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709774895, 'Chrome', 'Windows'),
-(277, '65e966e552f66', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709795045, 'Chrome', 'Windows');
+(277, '65e966e552f66', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709795045, 'Chrome', 'Windows'),
+(278, '65eda2d2ed406', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710072531, 'Chrome', 'Windows'),
+(279, '65ede075d8974', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710088309, 'Chrome', 'Windows');
 
 -- --------------------------------------------------------
 
@@ -1083,9 +1085,9 @@ CREATE TABLE `xe` (
 --
 
 INSERT INTO `xe` (`id`, `hieu_xe`, `hang_xe`, `nam_san_xuat`, `bien_so_xe`, `hinh_xe`, `create_date`, `create_user`) VALUES
-(1, 'yurri', 'yamaha', 2017, '84AE-00752', 'images/xe.jpg', '2024-03-07 06:08:30', 1),
-(2, 'Yaject', 'Yamaha', 2016, '84AE-05981', '', '2024-03-07 11:05:18', 1),
-(3, 'TTric', 'Honda', 2020, '84F1-55733', '', '2024-03-07 14:47:24', 1);
+(13, 'Jaki', 'Yamaha', 1996, '84F1-55722', 'images/1710144883_logo1.jpg', '2024-03-11 15:14:43', NULL),
+(14, 'Yasaki', 'Toyota', 1998, '84K1-552.03', 'images/1710158740_xe01.jfif', '2024-03-11 19:05:40', NULL),
+(15, 'JTK', 'ToYota', 1999, '84F1-53201', 'images/1710158797_xe02.jfif', '2024-03-11 19:06:37', NULL);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -1278,7 +1280,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT cho bảng `user_visit_log`
 --
 ALTER TABLE `user_visit_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=278;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=280;
 
 --
 -- AUTO_INCREMENT cho bảng `vat_tu`
@@ -1302,7 +1304,7 @@ ALTER TABLE `vat_tu_xuat`
 -- AUTO_INCREMENT cho bảng `xe`
 --
 ALTER TABLE `xe`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

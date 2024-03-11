@@ -13,6 +13,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use \yii\web\Response;
 use yii\helpers\Html;
+use yii\web\UploadedFile;
 /**
  * Default controller for the `xe` module
  */
@@ -90,7 +91,9 @@ class XeController extends Controller
     {
         $request = Yii::$app->request;
         $model = new Xe();  
-
+       
+    
+    
         if($request->isAjax){
             /*
             *   Process for ajax request
@@ -106,15 +109,34 @@ class XeController extends Controller
                                 Html::button(Yii::t('app', 'Save'),['class'=>'btn btn-primary','type'=>"submit"])
         
                 ];         
-            }else if($model->load($request->post()) && $model->save()){
-                return [
-                    'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> Yii::t('app', 'Create new')." Xe",
-                    'content'=>'<span class="text-success">' . Yii::t('app', 'Create success!').'</span>',
-                    'footer'=> Html::button(Yii::t('app', 'Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a(Yii::t('app', 'Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
-        
-                ];         
+            }
+           
+            else if($model->load($request->post())&& $model->save()){
+                $model->file = UploadedFile::getInstance($model, 'file');
+                if($model->file) {
+                    $uploadPath = Yii::getAlias('@webroot/images/');
+                    if (!file_exists($uploadPath)) {
+                        mkdir($uploadPath, 0777, true);
+                    }
+                    $fileName = time() . '_' . $model->file->baseName . '.' . $model->file->extension;
+                    $filePath = $uploadPath . $fileName;
+                    if($model->file->saveAs($filePath)) {
+                        $model->hinh_xe = 'images/' . $fileName;
+                        $model->save(false); // Lưu model mà không kiểm tra validation nữa
+                        return [
+                            'forceReload'=>'#crud-datatable-pjax',
+                            'title'=> Yii::t('app', 'Create new')." Xe",
+                            'content'=>'<span class="text-success">' . Yii::t('app', 'Create success!').'</span>',
+                            'footer'=> Html::button(Yii::t('app', 'Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                                    Html::a(Yii::t('app', 'Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                
+                        ];     
+                       
+                    }
+                }
+            
+                
+
             }else{           
                 return [
                     'title'=> Yii::t('app', 'Create new') ." Xe",
@@ -130,8 +152,11 @@ class XeController extends Controller
             /*
             *   Process for non-ajax request
             */
-            if ($model->load($request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+           
+            if ($model->load($request->post())&&$model->save() ) {
+             
+               
+            return $this->redirect(['view', 'id' => $model->id]);
             } else {
                 return $this->render('create', [
                     'model' => $model,

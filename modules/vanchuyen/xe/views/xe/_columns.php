@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Url;
-
+use yii\helpers\html;
 return [
     [
         'class' => 'kartik\grid\CheckboxColumn',
@@ -30,9 +30,15 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'bien_so_xe',
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'hinh_xe',
+       [
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'hinh_xe',
+                'label' => 'Hình ảnh',
+                'format' => 'html', 
+                'value' => function ($model) {
+                    $imageUrl = Yii::$app->urlManager->createUrl($model->hinh_xe);
+                    return Html::img($imageUrl, ['class' => 'img-thumbnail', 'style' => 'width:100px;height:100px;']);
+                },
     ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',

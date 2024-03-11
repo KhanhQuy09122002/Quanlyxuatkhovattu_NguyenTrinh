@@ -34,6 +34,7 @@ class XeBase extends \app\models\Xe
     /**
      * {@inheritdoc}
      */
+    public $file;
     public function rules()
     {
         return [
@@ -41,7 +42,7 @@ class XeBase extends \app\models\Xe
             [['nam_san_xuat', 'create_date'], 'safe'],
             [['create_user'], 'integer'],
             [['hieu_xe', 'hang_xe', 'hinh_xe','bien_so_xe'], 'string', 'max' => 255],
-            [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
+            [['file'], 'file','extensions' => 'png, jpg, jfif'],
         ];
     }
 
