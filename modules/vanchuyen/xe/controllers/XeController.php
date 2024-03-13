@@ -14,6 +14,7 @@ use yii\filters\VerbFilter;
 use \yii\web\Response;
 use yii\helpers\Html;
 use yii\web\UploadedFile;
+
 /**
  * Default controller for the `xe` module
  */
@@ -101,7 +102,7 @@ class XeController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Create new') . " Xe",
+                    'title'=> Yii::t('app', 'Tạo mới') . " Xe",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -125,8 +126,8 @@ class XeController extends Controller
                         $model->save(false); // Lưu model mà không kiểm tra validation nữa
                         return [
                             'forceReload'=>'#crud-datatable-pjax',
-                            'title'=> Yii::t('app', 'Create new')." Xe",
-                            'content'=>'<span class="text-success">' . Yii::t('app', 'Create success!').'</span>',
+                            'title'=> Yii::t('app', 'Tạo mới')." Xe",
+                            'content'=>'<span class="text-success">' . Yii::t('app', 'Tạo mới thành công!').'</span>',
                             'footer'=> Html::button(Yii::t('app', 'Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                                     Html::a(Yii::t('app', 'Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
                 
@@ -139,7 +140,7 @@ class XeController extends Controller
 
             }else{           
                 return [
-                    'title'=> Yii::t('app', 'Create new') ." Xe",
+                    'title'=> Yii::t('app', 'Tạo mới') ." Xe",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -185,7 +186,7 @@ class XeController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Update'). " Xe #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật'). " Xe #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -204,7 +205,7 @@ class XeController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> Yii::t('app', 'Update') ." Xe #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật') ." Xe #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),

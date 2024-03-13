@@ -29,7 +29,7 @@ class XeBase extends \app\models\Xe
     {
         return 'xe';
     }
-    public $imageFile;
+   
 
     /**
      * {@inheritdoc}
@@ -58,11 +58,28 @@ class XeBase extends \app\models\Xe
             'nam_san_xuat' => 'Năm Sản Xuất',
             'bien_so_xe' => 'Biển Số Xe',
             'hinh_xe' => 'Hình Xe',
+            'imageFile' => 'Image File',
             'create_date' => 'Ngày Tạo',
             'create_user' => 'Người Tạo',
         ];
     }
-
+    public function upload()
+    {
+        if ($this->validate()) {
+            $uploadPath = 'uploads/';
+            $fileName = $this->imageFile->baseName . '.' . $this->imageFile->extension;
+            $filePath = $uploadPath . $fileName;
+    
+            if ($this->imageFile->saveAs($filePath)) {
+                // Lưu đường dẫn của tệp tin tải lên vào trường hinh_xe
+                $this->hinh_xe = $filePath;
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
     /**
      * Gets query for [[PhieuXuatKhos]].
      *
@@ -75,4 +92,6 @@ class XeBase extends \app\models\Xe
         }
         return parent::beforeSave($insert);
     }
+
+ 
 }

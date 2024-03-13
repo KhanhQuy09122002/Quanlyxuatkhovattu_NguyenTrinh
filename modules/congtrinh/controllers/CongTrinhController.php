@@ -60,7 +60,7 @@ class CongTrinhController extends Controller
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "Congtrinh #".$id,
+                    'title'=> "Công trình #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -92,7 +92,7 @@ class CongTrinhController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Create new') . " Congtrinh",
+                    'title'=> Yii::t('app', 'Tạo mới') . " Công trình",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -103,15 +103,15 @@ class CongTrinhController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> Yii::t('app', 'Create new')." Congtrinh",
-                    'content'=>'<span class="text-success">' . Yii::t('app', 'Create success!').'</span>',
+                    'title'=> Yii::t('app', 'Tạo mới')." Công trình",
+                    'content'=>'<span class="text-success">' . Yii::t('app', 'Tạo thành công!').'</span>',
                     'footer'=> Html::button(Yii::t('app', 'Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a(Yii::t('app', 'Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                            Html::a(Yii::t('app', 'Tiếp tục tạo'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> Yii::t('app', 'Create new') ." Congtrinh",
+                    'title'=> Yii::t('app', 'Tạo mới') ." Công trình",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -154,7 +154,7 @@ class CongTrinhController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Update'). " Congtrinh #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật'). " Công trình #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -164,7 +164,7 @@ class CongTrinhController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Congtrinh #".$id,
+                    'title'=> "Công trình #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
@@ -173,7 +173,7 @@ class CongTrinhController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> Yii::t('app', 'Update') ." Congtrinh #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật') ." Công trình #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),

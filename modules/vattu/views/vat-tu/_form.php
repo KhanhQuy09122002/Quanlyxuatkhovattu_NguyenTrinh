@@ -17,10 +17,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'don_gia')->textInput() ?>
 
+
     <?= $form->field($model, 'id_loai_vat_tu')->dropDownList(
     \yii\helpers\ArrayHelper::map(\app\modules\vattu\models\LoaiVatTu::find()->all(), 'id', 'ten_loai_vat_tu'),
     ['prompt' => 'Chọn Loại vật tư']
 )->label('Loại vật tư') ?>
+
+ 
+
+
+    
+
 
   
 	<?php if (!Yii::$app->request->isAjax){ ?>

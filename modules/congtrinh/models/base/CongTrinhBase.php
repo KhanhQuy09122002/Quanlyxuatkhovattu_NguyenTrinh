@@ -1,6 +1,6 @@
 <?php
 namespace app\modules\congtrinh\models\base;
-
+use app\modules\congtrinh\models\CongTrinh;
 use Yii;
 
 /**
@@ -12,7 +12,7 @@ use Yii;
  * @property string|null $tg_bat_dau
  * @property string|null $tg_ket_thuc
  * @property int|null $p_id
- * @property string|null $trang_thai
+ * @property int|null $trang_thai
  * @property string|null $create_date
  * @property int|null $create_user
  *
@@ -40,6 +40,7 @@ class CongTrinhBase extends \app\models\CongTrinh
             [['p_id', 'create_user'], 'integer'],
             [['ten_cong_trinh', 'dia_diem'], 'string', 'max' => 255],
             [['trang_thai'], 'string', 'max' => 15],
+            [['p_id'], 'exist', 'skipOnError' => true, 'targetClass' => CongTrinh::class, 'targetAttribute' => ['p_id' => 'id']],
         ];
     }
 
@@ -67,5 +68,9 @@ class CongTrinhBase extends \app\models\CongTrinh
             $this->create_user = Yii::$app->user->id;
         }
         return parent::beforeSave($insert);
+    }
+    public function getCongTrinh()
+    {
+        return $this->hasOne(CongTrinh::class, ['id' => 'p_id']);
     }
 }

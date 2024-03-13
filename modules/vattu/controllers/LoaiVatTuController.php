@@ -60,7 +60,7 @@ class LoaiVatTuController extends Controller
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "LoaiVatTu #".$id,
+                    'title'=> "Loại vật tư #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -92,7 +92,7 @@ class LoaiVatTuController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Create new') . " LoaiVatTu",
+                    'title'=> Yii::t('app', 'Tạo mới Loại vật tư ') ,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -103,15 +103,15 @@ class LoaiVatTuController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> Yii::t('app', 'Create new')." LoaiVatTu",
-                    'content'=>'<span class="text-success">' . Yii::t('app', 'Create success!').'</span>',
+                    'title'=> Yii::t('app', 'Tạo mới Loại vật tư'),
+                    'content'=>'<span class="text-success">' . Yii::t('app', 'Tạo mới thành công!').'</span>',
                     'footer'=> Html::button(Yii::t('app', 'Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a(Yii::t('app', 'Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                            Html::a(Yii::t('app', 'Tiếp tục tạo'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> Yii::t('app', 'Create new') ." LoaiVatTu",
+                    'title'=> Yii::t('app', 'Tạo mới Loại vật tư') ,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -154,7 +154,7 @@ class LoaiVatTuController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Update'). " LoaiVatTu #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật'). " Loại vật tư #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -173,7 +173,7 @@ class LoaiVatTuController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> Yii::t('app', 'Update') ." LoaiVatTu #".$id,
+                    'title'=> Yii::t('app', 'Update') ." Loại vật tư #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),

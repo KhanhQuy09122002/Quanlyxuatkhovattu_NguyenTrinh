@@ -59,7 +59,7 @@ class VatTuController extends Controller
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "VatTu #".$id,
+                    'title'=> "Vật tư #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -91,7 +91,7 @@ class VatTuController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Create new VatTu",
+                    'title'=> "Tạo mới Vật tư",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -103,14 +103,14 @@ class VatTuController extends Controller
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
                     'title'=> "Create new VatTu",
-                    'content'=>'<span class="text-success">Create VatTu success</span>',
+                    'content'=>'<span class="text-success">Tạo mới thành công!</span>',
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                            Html::a('Tiếp tục tạo',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> "Create new VatTu",
+                    'title'=> "Tạo mới Vật tư",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -153,7 +153,7 @@ class VatTuController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Update VatTu #".$id,
+                    'title'=> "Cập nhật Vật tư #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -163,7 +163,7 @@ class VatTuController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "VatTu #".$id,
+                    'title'=> "Vật tư #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
@@ -172,7 +172,7 @@ class VatTuController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> "Update VatTu #".$id,
+                    'title'=> "Cập nhật Vật tư #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),

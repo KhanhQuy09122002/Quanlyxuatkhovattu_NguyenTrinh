@@ -12,8 +12,7 @@ use yii\widgets\DetailView;
         'attributes' => [
             'id',
             'ten_loai_vat_tu',
-            'create_date',
-            'create_user',
+          
         ],
     ]) ?>
 

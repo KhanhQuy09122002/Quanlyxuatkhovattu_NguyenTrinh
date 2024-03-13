@@ -41,6 +41,7 @@ class CongTrinh extends \yii\db\ActiveRecord
             [['p_id', 'create_user'], 'integer'],
             [['ten_cong_trinh', 'dia_diem'], 'string', 'max' => 255],
             [['trang_thai'], 'string', 'max' => 15],
+			 [['p_id'], 'exist', 'skipOnError' => true, 'targetClass' => CongTrinh::class, 'targetAttribute' => ['p_id' => 'id']],
         ];
     }
 
@@ -55,7 +56,7 @@ class CongTrinh extends \yii\db\ActiveRecord
             'dia_diem' => 'Dia Diem',
             'tg_bat_dau' => 'Tg Bat Dau',
             'tg_ket_thuc' => 'Tg Ket Thuc',
-            'p_id' => 'P ID',
+            'p_id' => 'P ID ',
             'trang_thai' => 'Trang Thai',
             'create_date' => 'Create Date',
             'create_user' => 'Create User',
@@ -80,5 +81,9 @@ class CongTrinh extends \yii\db\ActiveRecord
     public function getVatTuBocTaches()
     {
         return $this->hasMany(VatTuBocTach::class, ['id_cong_trinh' => 'id']);
+    }
+	 public function getCongTrinh()
+    {
+        return $this->hasOne(CongTrinh::class, ['id' => 'p_id']);
     }
 }

@@ -17,28 +17,43 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'ten_vat_tu',
+
         'label' =>'Tên vật tư'
+
+
     ],
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'so_luong',
+
         'label' =>'Số lượng'
     ],
     [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'don_gia',
-        'label' =>'Đơn giá'
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'don_gia',
+        'value' => function ($model) {
+            return Yii::$app->formatter->asCurrency($model->don_gia, '', ['symbol' => '']);
+        },
     ],
+    
+    
+    
+    
     [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'id_loai_vat_tu',
-        'label' =>'Loại vật tư'
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'id_loai_vat_tu',
+        'label' =>'Loại vật tư',
+        'value' => function ($model) {
+            return $model->loaiVatTu->ten_loai_vat_tu; 
+        },
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'create_date',
-        'label' =>'Thời gian tạo'
-    ],
+   // [
+     //   'class'=>'\kartik\grid\DataColumn',
+     //   'attribute'=>'create_date',
+
+      //  'label' =>'Thời gian tạo'
+
+   // ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'create_user',

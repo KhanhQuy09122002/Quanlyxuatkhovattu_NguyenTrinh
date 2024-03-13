@@ -30,14 +30,14 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'cccd',
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'create_date',
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'create_user',
-    ],
+ //   [
+  //      'class'=>'\kartik\grid\DataColumn',
+   //     'attribute'=>'create_date',
+  //  ],
+   // [
+   //     'class'=>'\kartik\grid\DataColumn',
+  //      'attribute'=>'create_user',
+ //   ],
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,

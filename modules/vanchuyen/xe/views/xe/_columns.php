@@ -30,7 +30,8 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'bien_so_xe',
     ],
-       [
+  
+    [
         'class' => '\kartik\grid\DataColumn',
         'attribute' => 'hinh_xe',
                 'label' => 'Hình ảnh',
@@ -40,6 +41,7 @@ return [
                     return Html::img($imageUrl, ['class' => 'img-thumbnail', 'style' => 'width:100px;height:100px;']);
                 },
     ],
+    
     // [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'create_date',

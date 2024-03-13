@@ -13,10 +13,22 @@ use yii\widgets\DetailView;
             'id',
             'ten_vat_tu',
             'so_luong',
-            'don_gia',
-            'id_loai_vat_tu',
-            'create_date',
-            'create_user',
+            [
+              
+                'attribute' => 'don_gia',
+                'value' => function ($model) {
+                    return Yii::$app->formatter->asCurrency($model->don_gia, '', ['symbol' => '']);
+                },
+            ],
+            [
+                
+                'attribute' => 'id_loai_vat_tu',
+                'label' =>'Loại vật tư',
+                'value' => function ($model) {
+                    return $model->loaiVatTu->ten_loai_vat_tu; 
+                },
+            ],
+         
         ],
     ]) ?>
 

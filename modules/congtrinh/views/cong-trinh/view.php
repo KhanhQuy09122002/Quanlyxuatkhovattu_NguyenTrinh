@@ -13,12 +13,35 @@ use yii\widgets\DetailView;
             'id',
             'ten_cong_trinh',
             'dia_diem',
-            'tg_bat_dau',
-            'tg_ket_thuc',
-            'p_id',
-            'trang_thai',
-            'create_date',
-            'create_user',
+            [
+                
+                'attribute' => 'tg_bat_dau',
+                'format' => ['date', 'php:d-m-Y'], 
+            ],
+            [
+                
+                'attribute' => 'tg_ket_thuc',
+                'format' => ['date', 'php:d-m-Y'], 
+            ],
+            [
+                'attribute' => 'p_id',
+                'label' =>'Công trình cha',
+                'value' => function ($model) {
+                    if ($model->congTrinh) {
+                        return $model->congTrinh->ten_cong_trinh;
+                    } else {
+                        return 'Không có công trình cha';
+                    }
+                },
+            ],
+            
+            [
+                'attribute' => 'trang_thai',
+                'value' => function ($model) {
+                    return $model->trang_thai == 1 ? 'Hoàn thành' : 'Chưa hoàn thành';
+                },
+            ],
+            
         ],
     ]) ?>
 

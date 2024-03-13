@@ -28,7 +28,7 @@ CrudAsset::register($this);
                 ['content'=>
                     Html::a('<i class="glyphicon glyphicon-plus"></i> ' . Yii::t('app', 'Tạo mới'), ['create'],
                     ['role'=>'modal-remote','title'=> Yii::t('app', 'Create new') . ' Xes','class'=>'btn btn-default']).
-                    Html::a('<i class="glyphicon glyphicon-repeat"></i> ' . Yii::t('app', 'Reset Grid'), [''],
+                    Html::a('<i class="glyphicon glyphicon-repeat"></i> ' . Yii::t('app', 'Trở lại'), [''],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>Yii::t('app', 'Reset Grid')]).
                     '{toggleData}'.
                     '{export}'

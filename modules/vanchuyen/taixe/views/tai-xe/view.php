@@ -15,8 +15,7 @@ use yii\widgets\DetailView;
             'dia_chi',
             'so_dien_thoai',
             'cccd',
-            'create_date',
-            'create_user',
+           
         ],
     ]) ?>
 

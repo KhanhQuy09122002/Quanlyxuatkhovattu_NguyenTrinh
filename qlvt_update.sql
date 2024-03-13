@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 11, 2024 lúc 01:28 PM
+-- Thời gian đã tạo: Th3 13, 2024 lúc 03:02 AM
 -- Phiên bản máy phục vụ: 10.4.27-MariaDB
 -- Phiên bản PHP: 7.4.33
 
@@ -368,7 +368,7 @@ CREATE TABLE `cong_trinh` (
   `tg_bat_dau` date DEFAULT NULL,
   `tg_ket_thuc` date DEFAULT NULL,
   `p_id` int(11) DEFAULT NULL,
-  `trang_thai` varchar(15) DEFAULT NULL,
+  `trang_thai` int(11) DEFAULT NULL,
   `create_date` datetime DEFAULT NULL,
   `create_user` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -378,7 +378,12 @@ CREATE TABLE `cong_trinh` (
 --
 
 INSERT INTO `cong_trinh` (`id`, `ten_cong_trinh`, `dia_diem`, `tg_bat_dau`, `tg_ket_thuc`, `p_id`, `trang_thai`, `create_date`, `create_user`) VALUES
-(1, 'Công trinh A', 'Châu Thành', '2024-07-03', '2024-08-02', 1, 'Hoàn thành', '2024-03-07 05:44:36', 1);
+(1, 'Công trinh A', 'Châu Thành', '2024-07-03', '2024-08-02', NULL, 0, '2024-03-07 05:44:36', 1),
+(2, 'Công trình B', 'Châu Thành', '2024-04-19', '2024-03-29', 1, 1, '2024-03-12 08:36:23', 1),
+(3, 'Công trình C', 'Châu Thành', '2024-03-16', '2024-03-31', 1, 0, '2024-03-12 16:32:29', 1),
+(4, 'Công trình D', 'Châu Đốc, An Giang', '2024-03-10', '2024-05-04', NULL, 0, '2024-03-12 16:34:57', 1),
+(5, 'Công trình E', 'Châu Đốc, An Giang', '2024-03-15', '2024-04-28', 4, 0, '2024-03-12 17:14:23', 1),
+(6, 'Công trình J', 'Vĩnh Long', '2024-03-09', '2024-04-27', NULL, 0, '2024-03-12 18:12:17', 1);
 
 -- --------------------------------------------------------
 
@@ -398,7 +403,8 @@ CREATE TABLE `loai_vat_tu` (
 --
 
 INSERT INTO `loai_vat_tu` (`id`, `ten_loai_vat_tu`, `create_date`, `create_user`) VALUES
-(1, 'Đá 201', '2024-03-07 09:16:13', 1);
+(1, 'Đá 201', '2024-03-07 09:16:13', 1),
+(2, 'Cát 373', '2024-03-13 07:49:27', 1);
 
 -- --------------------------------------------------------
 
@@ -1004,7 +1010,10 @@ INSERT INTO `user_visit_log` (`id`, `token`, `ip`, `language`, `user_agent`, `us
 (276, '65e9182f3765f', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709774895, 'Chrome', 'Windows'),
 (277, '65e966e552f66', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1709795045, 'Chrome', 'Windows'),
 (278, '65eda2d2ed406', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710072531, 'Chrome', 'Windows'),
-(279, '65ede075d8974', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710088309, 'Chrome', 'Windows');
+(279, '65ede075d8974', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710088309, 'Chrome', 'Windows'),
+(280, '65efae05d8051', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710206469, 'Chrome', 'Windows'),
+(281, '65f01b19e2647', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710234393, 'Chrome', 'Windows'),
+(282, '65f0f324a5a06', '::1', 'vi', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36', 1, 1710289700, 'Chrome', 'Windows');
 
 -- --------------------------------------------------------
 
@@ -1027,7 +1036,9 @@ CREATE TABLE `vat_tu` (
 --
 
 INSERT INTO `vat_tu` (`id`, `ten_vat_tu`, `so_luong`, `don_gia`, `id_loai_vat_tu`, `create_date`, `create_user`) VALUES
-(1, 'Đá', 3.7, 500000, 1, '2024-03-07 10:58:05', 1);
+(1, 'Đá', 3.8, 500000, 1, '2024-03-07 10:58:05', 1),
+(2, 'Đá nhỏ', 3.7, 850000, 1, '2024-03-12 08:51:51', 1),
+(3, 'Cát', 4.2, 7600000, 2, '2024-03-13 07:49:52', 1);
 
 -- --------------------------------------------------------
 
@@ -1132,7 +1143,8 @@ ALTER TABLE `auth_rule`
 -- Chỉ mục cho bảng `cong_trinh`
 --
 ALTER TABLE `cong_trinh`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `p_id` (`p_id`);
 
 --
 -- Chỉ mục cho bảng `loai_vat_tu`
@@ -1238,13 +1250,13 @@ ALTER TABLE `xe`
 -- AUTO_INCREMENT cho bảng `cong_trinh`
 --
 ALTER TABLE `cong_trinh`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `loai_vat_tu`
 --
 ALTER TABLE `loai_vat_tu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `nguoi_dung`
@@ -1280,13 +1292,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT cho bảng `user_visit_log`
 --
 ALTER TABLE `user_visit_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=280;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=283;
 
 --
 -- AUTO_INCREMENT cho bảng `vat_tu`
 --
 ALTER TABLE `vat_tu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `vat_tu_boc_tach`
@@ -1330,6 +1342,12 @@ ALTER TABLE `auth_item`
 ALTER TABLE `auth_item_child`
   ADD CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Các ràng buộc cho bảng `cong_trinh`
+--
+ALTER TABLE `cong_trinh`
+  ADD CONSTRAINT `cong_trinh_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `cong_trinh` (`id`);
 
 --
 -- Các ràng buộc cho bảng `phieu_xuat_kho`

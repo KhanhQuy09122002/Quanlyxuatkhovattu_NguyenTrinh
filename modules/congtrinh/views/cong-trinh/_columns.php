@@ -23,16 +23,26 @@ return [
         'attribute'=>'dia_diem',
     ],
     [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'tg_bat_dau',
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'tg_bat_dau',
+        'format' => ['date', 'php:d-m-Y'], 
     ],
     [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'tg_ket_thuc',
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'tg_ket_thuc',
+        'format' => ['date', 'php:d-m-Y'], 
     ],
     [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'p_id',
+        'class' => '\kartik\grid\DataColumn',
+        'attribute' => 'p_id',
+        'label' =>'Công trình cha',
+        'value' => function ($model) {
+            if ($model->congTrinh) {
+                return $model->congTrinh->ten_cong_trinh;
+            } else {
+                return 'Không có công trình cha';
+            }
+        },
     ],
     // [
         // 'class'=>'\kartik\grid\DataColumn',
@@ -64,4 +74,4 @@ return [
                           'data-confirm-message'=>Yii::t('app', 'Are you sure want to delete this item')], 
     ],
 
-];   
+];

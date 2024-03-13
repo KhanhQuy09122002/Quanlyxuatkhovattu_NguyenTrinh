@@ -19,16 +19,16 @@ return [
         'attribute'=>'ten_loai_vat_tu',
         'label' =>'Tên loại vật tư'
     ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'create_date',
-        'label' =>'Thời gian tạo'
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'create_user',
-        'label' =>'Người tạo'
-    ],
+   // [
+      //  'class'=>'\kartik\grid\DataColumn',
+     //   'attribute'=>'create_date',
+      //  'label' =>'Thời gian tạo'
+  //  ],
+ //   [
+   //     'class'=>'\kartik\grid\DataColumn',
+  //      'attribute'=>'create_user',
+  //      'label' =>'Người tạo'
+  //  ],
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,

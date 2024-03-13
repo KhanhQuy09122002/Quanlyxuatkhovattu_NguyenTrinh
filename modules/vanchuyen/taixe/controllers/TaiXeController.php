@@ -60,7 +60,7 @@ class TaiXeController extends Controller
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "Taixe #".$id,
+                    'title'=> "Tài xế #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -92,7 +92,7 @@ class TaiXeController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Create new') . " Taixe",
+                    'title'=> Yii::t('app', 'Tạo mới Tài xế') ,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -103,15 +103,15 @@ class TaiXeController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> Yii::t('app', 'Create new')." Taixe",
-                    'content'=>'<span class="text-success">' . Yii::t('app', 'Create success!').'</span>',
+                    'title'=> Yii::t('app', 'Tạo mới ')." Tài xế",
+                    'content'=>'<span class="text-success">' . Yii::t('app', 'Tạo thành công!').'</span>',
                     'footer'=> Html::button(Yii::t('app', 'Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a(Yii::t('app', 'Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                            Html::a(Yii::t('app', 'Tiếp tục tạo'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> Yii::t('app', 'Create new') ." Taixe",
+                    'title'=> Yii::t('app', 'Tạo mới') ." Tai xế",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -154,7 +154,7 @@ class TaiXeController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> Yii::t('app', 'Update'). " Taixe #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật'). " Tài xế #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -164,7 +164,7 @@ class TaiXeController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Taixe #".$id,
+                    'title'=> "Tai xế #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
@@ -173,7 +173,7 @@ class TaiXeController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> Yii::t('app', 'Update') ." Taixe #".$id,
+                    'title'=> Yii::t('app', 'Cập nhật') ." Tai xế #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),

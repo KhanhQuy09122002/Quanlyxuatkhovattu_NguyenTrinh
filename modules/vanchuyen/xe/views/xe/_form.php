@@ -9,7 +9,7 @@ use yii\widgets\ActiveForm;
 
 <div class="xe-form">
 
-    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+<?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>  
 
     <?= $form->field($model, 'hieu_xe')->textInput(['maxlength' => true]) ?>
 
@@ -24,20 +24,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'file')->fileInput()->label('Hình ảnh xe') ?>
 
-    <?php
-    // JavaScript code to store the value of hinh_xe when the form is submitted
-    $js = <<<JS
-    $(document).on('beforeSubmit', 'form#{$form->id}', function(e){
-        e.preventDefault(); // Prevent form submission
-        var hinh_xe_value = $('#hinh_xe_input').val(); // Get the value of hinh_xe
-        // Store the value of hinh_xe in localStorage
-        localStorage.setItem('hinh_xe_value', hinh_xe_value);
-        // Now you can submit the form
-        this.submit();
-    });
-JS;
-    $this->registerJs($js);
-    ?>
+  
 
     <?php if (!Yii::$app->request->isAjax){ ?>
         <div class="form-group">

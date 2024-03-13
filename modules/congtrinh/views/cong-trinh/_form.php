@@ -15,13 +15,20 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'dia_diem')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'tg_bat_dau')->textInput() ?>
+    <?= $form->field($model, 'tg_bat_dau')->textInput(['type' => 'date']) ?>
 
-    <?= $form->field($model, 'tg_ket_thuc')->textInput() ?>
+    <?= $form->field($model, 'tg_ket_thuc')->textInput(['type' => 'date']) ?>
 
-    <?= $form->field($model, 'p_id')->textInput() ?>
+    <?= $form->field($model, 'p_id')->dropDownList(
+    \yii\helpers\ArrayHelper::map(\app\modules\congtrinh\models\CongTrinh::find()->all(), 'id', 'ten_cong_trinh'),
+    ['prompt' => 'Chọn Công trình cha']
+)->label('Công trình cha') ?>
 
-    <?= $form->field($model, 'trang_thai')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'trang_thai')->dropDownList([
+        '1' => 'Hoàn thành',
+        '0' => 'Chưa hoàn thành',
+    ]) ?>
+
 
  
 
