@@ -11,7 +11,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -50,16 +50,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.6.4",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/fde1f76e2799dd877c176abde0ec836553246991",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
             },
             "type": "bower-asset",
             "license": [
@@ -552,16 +552,16 @@
         },
         {
             "name": "kartik-v/bootstrap-popover-x",
-            "version": "v1.5.2",
+            "version": "v1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-popover-x.git",
-                "reference": "0a6f1c8bf44565f2308757d4eebf123f284a7ac0"
+                "reference": "879def62529797833e10885b6e77864e83e9e240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/0a6f1c8bf44565f2308757d4eebf123f284a7ac0",
-                "reference": "0a6f1c8bf44565f2308757d4eebf123f284a7ac0",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/879def62529797833e10885b6e77864e83e9e240",
+                "reference": "879def62529797833e10885b6e77864e83e9e240",
                 "shasum": ""
             },
             "type": "library",
@@ -599,7 +599,7 @@
             ],
             "support": {
                 "issues": "https://github.com/kartik-v/bootstrap-popover-x/issues",
-                "source": "https://github.com/kartik-v/bootstrap-popover-x/tree/v1.5.2"
+                "source": "https://github.com/kartik-v/bootstrap-popover-x/tree/v1.5.4"
             },
             "funding": [
                 {
@@ -607,7 +607,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-07-22T19:34:37+00:00"
+            "time": "2024-03-12T13:23:15+00:00"
         },
         {
             "name": "kartik-v/yii2-dialog",
@@ -1091,16 +1091,16 @@
         },
         {
             "name": "mpdf/mpdf",
-            "version": "v8.2.2",
+            "version": "v8.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mpdf/mpdf.git",
-                "reference": "596a87b876d7793be7be060a8ac13424de120dd5"
+                "reference": "6f723a96becf989a831e38caf758d28364a69939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/596a87b876d7793be7be060a8ac13424de120dd5",
-                "reference": "596a87b876d7793be7be060a8ac13424de120dd5",
+                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/6f723a96becf989a831e38caf758d28364a69939",
+                "reference": "6f723a96becf989a831e38caf758d28364a69939",
                 "shasum": ""
             },
             "require": {
@@ -1168,7 +1168,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-11-07T13:52:14+00:00"
+            "time": "2024-03-11T12:55:53+00:00"
         },
         {
             "name": "mpdf/psr-http-message-shim",

@@ -28,7 +28,8 @@ CrudAsset::register($this);
             'hover' => true,
             'panel' => ['type' => 'primary', 'heading' => 'Grid Grouping Example'],
             'toggleDataContainer' => ['class' => 'btn-group mr-2 me-2'],
-            'columns' => [
+            'columns' => require(__DIR__.'/_columns.php'),
+           /*  'columns' => [
                 ['class' => 'kartik\grid\SerialColumn'],
                
                
@@ -151,7 +152,7 @@ CrudAsset::register($this);
                     ],
                 ],      
                
-            ],
+            ], */
             'toolbar'=> [
                 ['content'=>
                     Html::a('<i class="glyphicon glyphicon-plus"></i> ' . Yii::t('app', 'Tạo mới'), ['create'],

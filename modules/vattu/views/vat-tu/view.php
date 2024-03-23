@@ -17,7 +17,8 @@ use yii\widgets\DetailView;
               
                 'attribute' => 'don_gia',
                 'value' => function ($model) {
-                    return Yii::$app->formatter->asCurrency($model->don_gia, '', ['symbol' => '']);
+                    //return Yii::$app->formatter->asCurrency($model->don_gia, '', ['symbol' => '']);
+                    return number_format($model->don_gia);
                 },
             ],
             [
