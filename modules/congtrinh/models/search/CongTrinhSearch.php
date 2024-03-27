@@ -41,12 +41,18 @@ class CongTrinhSearch extends Congtrinh
      */
     public function search($params)
     {
-        $query = Congtrinh::find();
-
-        $dataProvider = new ActiveDataProvider([
-            'query' => $query,
-        ]);
-
+       
+      $query = CongTrinh::find()
+      ->select(['*', 'IFNULL(p_id, id) AS sort_id']) 
+      ->orderBy(['sort_id' => SORT_ASC, 'p_id' => SORT_ASC, 'id' => SORT_ASC]);
+  
+       $dataProvider = new ActiveDataProvider([
+        'query' => $query,
+        'pagination' => [
+            'pageSize' => 10,
+        ],
+    ]);
+    
         $this->load($params);
 
         if (!$this->validate()) {

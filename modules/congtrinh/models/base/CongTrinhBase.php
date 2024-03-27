@@ -73,4 +73,13 @@ class CongTrinhBase extends \app\models\CongTrinh
     {
         return $this->hasOne(CongTrinh::class, ['id' => 'p_id']);
     }
+    public function getCongTrinhs()
+    {
+        // Mối quan hệ một-nhiều: một công trình cha có nhiều công trình con
+        return $this->hasMany(CongTrinh::class, ['p_id' => 'id']);
+    }
+    public function getType()
+{
+    return $this->p_id ? 'con' : 'cha';
+}
 }

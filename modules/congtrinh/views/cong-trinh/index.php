@@ -33,6 +33,7 @@ CrudAsset::register($this);
                
                 [
                     'attribute' => 'ten_cong_trinh',
+                  
                     'pageSummary' => 'Page Summary',
                     'pageSummaryOptions' => ['class' => 'text-right text-end'],
                 ],
@@ -60,26 +61,9 @@ CrudAsset::register($this);
                    
                     'pageSummary' => true
                 ],
-                [
-                    'attribute' => 'p_id', 
-                    'label' =>'Công trình cha',
-                    'width' => '310px',
-                    'value' => function ($model, $key, $index, $widget) { 
-                        if ($model->congTrinh !== null) {
-                            return $model->congTrinh->ten_cong_trinh;
-                        } else {
-                            return 'Không có công trình cha';
-                        }
-                    },
-                    'filterType' => GridView::FILTER_SELECT2,
-                    'filter' => ArrayHelper::map(CongTrinh::find()->orderBy('ten_cong_trinh')->asArray()->all(), 'id', 'ten_cong_trinh'), 
-                   // 'filter' => array_merge(['' => 'Không có công trình cha'], ArrayHelper::map(CongTrinh::find()->orderBy('ten_cong_trinh')->asArray()->all(), 'id', 'ten_cong_trinh')),
-                    'filterWidgetOptions' => [
-                        'pluginOptions' => ['allowClear' => true],
-                    ],
-                    'filterInputOptions' => ['placeholder' => 'Công trình cha'],
-                    'group' => true,  // enable grouping
-                ],
+              
+            
+              
                 [
                     'class' => 'kartik\grid\ActionColumn',
                     'header' => 'Hành động',
@@ -166,7 +150,15 @@ CrudAsset::register($this);
                     '{export}'
                 ],
             ],    
-           
+            'rowOptions' => function ($model, $key, $index, $grid) {
+                if ($model->p_id) {
+                    return ['class' => 'child-row', 'data-parent-id' => $model->p_id, 'style' => 'display: none;'];
+                } else {
+                    return ['class' => 'parent-row'];
+                }
+            },
+            'showFooter' => true,
+            'footerRowOptions' => ['style' => 'display: none;'],
             'striped' => true,
             'condensed' => true,
             'responsive' => true,          
@@ -190,6 +182,31 @@ CrudAsset::register($this);
         ])?>
     </div>
 </div>
+<?php
+$this->registerJs('
+$(document).on("click", ".parent-row", function() {
+    var parentId = $(this).data("key");
+    var hasChild = $(".child-row[data-parent-id="+parentId+"]").length > 0;
+    if (hasChild) {
+        $(".child-row[data-parent-id="+parentId+"]").toggle();
+        $(".child-row[data-parent-id="+parentId+"]").css("background-color", "yellow");
+    } else {
+        // Nếu không có công trình con, chuyển hướng đến trang danh sách các phiếu xuất kho
+        window.location.href = "phieu-xuat-kho?id_cong_trinh=" + parentId;
+    }
+});
+
+$(".child-row").each(function() {
+    $(this).on("click", function() {
+        var childId = $(this).data("key"); // Lấy id của công trình con
+        // Chuyển hướng đến trang danh sách các phiếu xuất kho với id của công trình con
+        window.location.href = "phieu-xuat-kho?id_cong_trinh=" + childId;
+    });
+});
+
+');
+?>
+
 <?php Modal::begin([
     "id"=>"ajaxCrudModal",
     "footer"=>"",// always need it for jquery plugin
