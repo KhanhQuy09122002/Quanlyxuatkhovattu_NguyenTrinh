@@ -5,6 +5,7 @@ namespace app\modules\congtrinh\controllers;
 use Yii;
 use app\modules\congtrinh\models\CongTrinh;
 use app\modules\congtrinh\models\search\CongTrinhSearch;
+use app\modules\xuatkho\models\PhieuXuatKho;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -268,5 +269,15 @@ class CongTrinhController extends Controller
         } else {
             throw new NotFoundHttpException(Yii::t('app', 'The requested page does not exist.'));
         }
+    }
+    public function actionPhieuXuatKho($id_cong_trinh)
+    {
+        // Lấy danh sách các phiếu xuất kho của công trình
+        $phieuXuatKhoList = PhieuXuatKho::find()->where(['id_cong_trinh' => $id_cong_trinh])->all();
+    
+        // Render view và truyền danh sách phiếu xuất kho
+        return $this->render('phieu-xuat-kho', [
+            'phieuXuatKhoList' => $phieuXuatKhoList,
+        ]);
     }
 }
